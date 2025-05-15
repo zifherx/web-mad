@@ -23,6 +23,14 @@ export default function Home() {
           <li className="tracking-[-.01em]">
             Save and see your changes instantly.
           </li>
+          <li>
+            <span>MARCO GAY</span>
+          </li>
+          <li>
+            <span className="text-2xl text-orange-300 capitalize">
+              AL CHATO LE DAN
+            </span>
+          </li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
