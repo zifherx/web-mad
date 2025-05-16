@@ -33,6 +33,9 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-redCustom: var(--redCustom);
+  --color-orangeCustom: var(--orangeCustom);
+  --color-blueCustom: var(--blueCustom);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -44,6 +47,9 @@
 }
 
 :root {
+  --redCustom: oklch(0.66 0.2285 22.3);
+  --orangeCustom: oklch(0.71 0.1829 35.86);
+  --blueCustom: oklch(0.16 0.0572 257.17);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.129 0.042 264.695);
