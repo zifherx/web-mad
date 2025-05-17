@@ -51,7 +51,7 @@ export function Footer() {
             />
           ))}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contacto</h3>
+            <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <ul className="space-y-5">
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 shrink-0" />

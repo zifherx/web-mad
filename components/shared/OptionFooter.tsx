@@ -6,7 +6,7 @@ import Link from "next/link";
 export function OptionFooter({ childrens, titleMenu }: MenuFooterProp) {
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-4">{titleMenu}</h3>
+      <h3 className="text-xl font-bold mb-4">{titleMenu}</h3>
       <ul className="space-y-2">
         {childrens.map(({ id, linkOption, titleOption }) => (
           <li key={id}>

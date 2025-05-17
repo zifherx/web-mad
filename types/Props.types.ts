@@ -11,6 +11,12 @@ export type LinkHrefProp = {
   className?: string;
 };
 
+export type LinkIconProp = {
+  text: string;
+  icon: IconProp;
+  href: string;
+};
+
 export type MenuFooterProp = {
   id: number;
   titleMenu: string;

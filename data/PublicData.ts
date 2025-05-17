@@ -3,6 +3,8 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { MenuFooterProp, SocialButtonProp } from "@/types";
+import { LinkIcon } from "@/interfaces";
+import { Mail, Phone } from "lucide-react";
 
 export const MenuFooterData: MenuFooterProp[] = [
   {
@@ -97,5 +99,18 @@ export const SocialButtonData: SocialButtonProp[] = [
     iconName: AiOutlineYoutube,
     target: "_blank",
     srOnly: "Youtube",
+  },
+];
+
+export const ToolbarHeaderData: LinkIcon[] = [
+  {
+    href: "mailto:contacto@marketingaldia.net",
+    icon: Mail,
+    text: "contacto@marketingaldia.net",
+  },
+  {
+    href: "tel:938163886",
+    icon: Phone,
+    text: "938 163 886",
   },
 ];
