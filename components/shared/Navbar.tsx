@@ -12,7 +12,7 @@ export function Navbar() {
   return (
     <nav className="max-w-7xl mx-auto flex h-28 items-center justify-between">
       <Image
-        src="/images/logo-mad-original.png"
+        src="/images/logos/logo-mad-original.png"
         alt="Logo Marketing Al Día"
         width={120}
         height={50}
