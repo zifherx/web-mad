@@ -1,12 +1,13 @@
 "use client";
+
 import Image from "next/image";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import { LinkHref } from "./LinkHref";
 import { OptionFooter } from "./OptionFooter";
 import { SocialButton } from "./SocialButton";
 
 import { MenuFooterData, SocialButtonData } from "@/data";
-import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   const today = new Date().getFullYear();

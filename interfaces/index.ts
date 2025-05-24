@@ -1,5 +1,10 @@
 import { IconProp, ImagePositionProp } from "@/types";
-import { AnimationControls, TargetAndTransition, Transition, VariantLabels } from "framer-motion";
+import {
+  AnimationControls,
+  TargetAndTransition,
+  Transition,
+  VariantLabels,
+} from "framer-motion";
 
 export interface SubmenuFooter {
   id: number;
@@ -23,7 +28,6 @@ export interface CarouselBannerItem {
   imageItem: ImageI;
   motionDivImage: ParameterMotion;
   motionDivText: ParameterMotion;
-  bgColorGradient: string;
 }
 
 export interface ImageI {
@@ -42,7 +46,7 @@ export interface ButtonI {
 }
 
 export interface ParameterMotion {
-  initial: boolean | TargetAndTransition | VariantLabels | undefined ;
+  initial: boolean | TargetAndTransition | VariantLabels | undefined;
   animate: AnimationControls | VariantLabels | TargetAndTransition;
   transition: Transition | undefined;
 }

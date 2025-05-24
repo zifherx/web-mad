@@ -119,97 +119,97 @@ export const BannerCarruselData: CarouselBannerItem[] = [
   {
     id: 1,
     title: "Transforma Tu Negocio con Marketing que Funciona",
-    description: "Estrategias digitales comprobadas que generan leads, ventas y crecimiento real para tu empresa",
+    description:
+      "Estrategias digitales comprobadas que generan leads, ventas y crecimiento real para tu empresa",
     imageItem: {
       id: 1,
       imageSource: "alex-elias.png",
-      imageAlt: "Alex Elias Banner"
+      imageAlt: "Alex Elias Banner",
     },
     positionImage: "right",
     btnCTA1: {
       id: 1,
       buttonHref: "#",
-      buttonText: "Agenda tu Consulta"
+      buttonText: "Agenda tu Consulta",
     },
     btnCTA2: {
       id: 2,
       buttonHref: "#",
-      buttonText: "Ver Casos de Éxito"
+      buttonText: "Ver Casos de Éxito",
     },
     motionDivImage: {
-      initial: { opacity: 0, scale: 0.9},
+      initial: { opacity: 0, scale: 0.9 },
       animate: { opacity: 1, scale: 1 },
-      transition: { duration: 0.5, delay: 0.2}
+      transition: { duration: 0.5, delay: 0.2 },
     },
     motionDivText: {
-      initial: { opacity: 0, x: -50},
+      initial: { opacity: 0, x: -50 },
       animate: { opacity: 1, x: 0 },
-      transition: { duration: 0.5 }
+      transition: { duration: 0.5 },
     },
-    bgColorGradient: "redCustom"
   },
   {
     id: 2,
     title: "Marketing Digital de Vanguardia para Marcas Ambiciosas",
-    description: "Mantente adelante de la competencia con las últimas tendencias y tecnologías del marketing digital",
+    description:
+      "Mantente adelante de la competencia con las últimas tendencias y tecnologías del marketing digital",
     imageItem: {
       id: 1,
       imageSource: "clinton-flores2.png",
-      imageAlt: "Clinton Flores Banner"
+      imageAlt: "Clinton Flores Banner",
     },
     positionImage: "left",
     btnCTA1: {
       id: 1,
       buttonHref: "#",
-      buttonText: "Comienza Ahora"
+      buttonText: "Comienza Ahora",
     },
     btnCTA2: {
       id: 2,
       buttonHref: "#",
-      buttonText: "Descubre Nuestros Servicios"
+      buttonText: "Descubre Nuestros Servicios",
     },
     motionDivImage: {
-      initial: { opacity: 0, scale: 0.9},
+      initial: { opacity: 0, scale: 0.9 },
       animate: { opacity: 1, scale: 1 },
-      transition: { duration: 0.5}
+      transition: { duration: 0.5 },
     },
     motionDivText: {
-      initial: { opacity: 0, x: 50},
+      initial: { opacity: 0, x: 50 },
       animate: { opacity: 1, x: 0 },
-      transition: { duration: 0.5, delay: 0.2 }
+      transition: { duration: 0.5, delay: 0.2 },
     },
-    bgColorGradient: "blueCustom"
   },
   {
     id: 3,
     title: "Expertos en Marketing Digital con +5 Años de Experiencia",
-    description: "Confía en profesionales que han ayudado a cientos de empresas a alcanzar sus objetivos digitales",
+    description:
+      "Confía en profesionales que han ayudado a cientos de empresas a alcanzar sus objetivos digitales",
     imageItem: {
       id: 1,
       imageSource: "elkin-avendano.png",
-      imageAlt: "Elkin Avendano Banner"
+      imageAlt: "Elkin Avendano Banner",
     },
     positionImage: "right",
     btnCTA1: {
       id: 1,
       buttonHref: "#",
-      buttonText: "Solicita Propuesta"
+      buttonText: "Solicita Propuesta",
     },
     btnCTA2: {
       id: 2,
       buttonHref: "#",
-      buttonText: "Conoce al Equipo"
+      buttonText: "Conoce al Equipo",
     },
     motionDivImage: {
-      initial: { opacity: 0, scale: 0.9},
+      initial: { opacity: 0, scale: 0.9 },
       animate: { opacity: 1, scale: 1 },
-      transition: { duration: 0.5, delay: 0.2}
+      transition: { duration: 0.5, delay: 0.2 },
     },
     motionDivText: {
-      initial: { opacity: 0, x: -50},
+      initial: { opacity: 0, x: -50 },
       animate: { opacity: 1, x: 0 },
-      transition: { duration: 0.5 }
+      transition: { duration: 0.5 },
     },
-    bgColorGradient: "orangeCustom"
   },
-]
+];
