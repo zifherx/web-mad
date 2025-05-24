@@ -1,12 +1,13 @@
 "use client";
+
 import Image from "next/image";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import { LinkHref } from "./LinkHref";
 import { OptionFooter } from "./OptionFooter";
 import { SocialButton } from "./SocialButton";
 
 import { MenuFooterData, SocialButtonData } from "@/data";
-import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   const today = new Date().getFullYear();
@@ -17,7 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-14">
           <div className="space-y-5">
             <Image
-              src={`/images/logo-mad-white.png`}
+              src={`/images/logos/logo-mad-white.png`}
               alt="MAD Logo"
               width={180}
               height={50}
