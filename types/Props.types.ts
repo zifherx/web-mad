@@ -2,7 +2,7 @@ import { HTMLAttributeAnchorTarget } from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 
-import { SubmenuFooter } from "@/interfaces";
+import { CarouselBannerItem, SubmenuFooter } from "@/interfaces";
 
 export type LinkHrefProp = {
   text: string;
@@ -31,6 +31,10 @@ export type SocialButtonProp = {
   srOnly: string;
 };
 
+export type CarouselBannerItemProp = CarouselBannerItem;
+
 export type ITargetLink = "_blank" | "_parent" | "_self" | "_top";
+
+export type ImagePositionProp = "left" | "right" | "top" | "bottom";
 
 export type IconProp = LucideIcon | IconType;

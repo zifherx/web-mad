@@ -18,7 +18,7 @@ export function MenuDesktop() {
     <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+          <Link href="/" passHref>
             <NavigationMenuLink
               className={cn(
                 navigationMenuTriggerStyle(),
