@@ -9,6 +9,7 @@ import Link from "next/link";
 
 export function Navbar() {
   const router = useRouter();
+
   return (
     <nav className="max-w-7xl mx-auto flex h-28 items-center justify-between">
       <Image

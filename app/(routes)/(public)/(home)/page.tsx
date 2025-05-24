@@ -3,7 +3,7 @@ import { CarruselHeroSection } from "./components/CarruselHeroSection";
 export default function HomePage() {
   return (
     <>
-      <CarruselHeroSection/>
+      <CarruselHeroSection />
       <div>Counter Fichas</div>
       <div>CTA1</div>
       <div>Brochure</div>
@@ -12,5 +12,5 @@ export default function HomePage() {
       <div>Socios Estratégicos</div>
       <div>CTA2</div>
     </>
-  )
+  );
 }
