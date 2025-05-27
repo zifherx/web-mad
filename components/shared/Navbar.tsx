@@ -19,7 +19,7 @@ export function Navbar() {
         height={50}
         onClick={() => router.push("/")}
         priority
-        className="cursor-pointer w-fit"
+        className="cursor-pointer"
       />
 
       <MenuDesktop />

@@ -2,7 +2,15 @@ import { HTMLAttributeAnchorTarget } from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 
-import { CarouselBannerItem, SubmenuFooter } from "@/interfaces";
+import {
+  CarouselBannerItem,
+  ICardCounter,
+  IServiceCard,
+  ITestimonialCard,
+  ITitle,
+  SlideItem,
+  SubmenuFooter,
+} from "@/interfaces";
 
 export type LinkHrefProp = {
   text: string;
@@ -37,4 +45,23 @@ export type ITargetLink = "_blank" | "_parent" | "_self" | "_top";
 
 export type ImagePositionProp = "left" | "right" | "top" | "bottom";
 
+export type AlignText = "left" | "center" | "right" | "justify";
+
 export type IconProp = LucideIcon | IconType;
+
+export type TitleProp = ITitle;
+
+export type CardCounterProp = ICardCounter;
+
+export type SlideItemProp = {
+  slides: SlideItem[];
+};
+
+export type ParrafoProp = {
+  text: string;
+  align: AlignText;
+};
+
+export type ServiceCardProp = IServiceCard;
+
+export type TestimonialCardProp = ITestimonialCard;
