@@ -24,7 +24,7 @@ export function BannerItem({
     <div
       className={cn(
         "relative h-[80vh] w-full overflow-hidden",
-        `bg-gradient-to-r ${id === 1 && "from-redCustom/10 to-redCustom/30"} ${
+        `bg-gradient-to-r ${id === 1 && "from-redCustom/60 to-redCustom/30"} ${
           id === 2 && "from-blueCustom/10 to-blueCustom/30"
         } ${id === 3 && "from-orangeCustom/10 to-orangeCustom/30"}`
       )}
@@ -81,7 +81,7 @@ export function BannerItem({
               <Button
                 size="lg"
                 className={cn(
-                  "text-white transition duration-300",
+                  "text-white transition-all duration-300 animate-pulse",
                   id === 1 && "bg-redCustom hover:bg-redCustom/80",
                   id === 2 && "bg-blueCustom hover:bg-blueCustom/80",
                   id === 3 && "bg-orangeCustom hover:bg-orangeCustom/80"
