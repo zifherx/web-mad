@@ -1,10 +1,17 @@
-import { Mail, Phone } from "lucide-react";
+import { BarChart3, Lightbulb, Mail, Phone, Users } from "lucide-react";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
+
 import { MenuFooterProp, SocialButtonProp } from "@/types";
-import { CarouselBannerItem, LinkIcon } from "@/interfaces";
-import { animate } from "framer-motion";
+import {
+  CarouselBannerItem,
+  ICardCounter,
+  IServiceCard,
+  ITestimonialCard,
+  LinkIcon,
+  SlideItem,
+} from "@/interfaces";
 
 export const MenuFooterData: MenuFooterProp[] = [
   {
@@ -155,7 +162,7 @@ export const BannerCarruselData: CarouselBannerItem[] = [
       "Mantente adelante de la competencia con las últimas tendencias y tecnologías del marketing digital",
     imageItem: {
       id: 1,
-      imageSource: "clinton-flores2.png",
+      imageSource: "clinton-flores.png",
       imageAlt: "Clinton Flores Banner",
     },
     positionImage: "left",
@@ -211,5 +218,170 @@ export const BannerCarruselData: CarouselBannerItem[] = [
       animate: { opacity: 1, x: 0 },
       transition: { duration: 0.5 },
     },
+  },
+];
+
+export const CounterItemsData: ICardCounter[] = [
+  {
+    id: 1,
+    title: "Clientes Satisfechos",
+    description: "Empresas que confían en nosotros",
+    finalNumber: 500,
+  },
+  {
+    id: 2,
+    title: "Países",
+    description: "Presencia internacional",
+    finalNumber: 15,
+  },
+  {
+    id: 3,
+    title: "Proyectos",
+    description: "Completados exitosamente",
+    finalNumber: 1500,
+  },
+  {
+    id: 4,
+    title: "Satisfacción",
+    description: "Índice de satisfacción",
+    finalNumber: "98%",
+  },
+];
+
+export const SlidesHeroData: SlideItem[] = [
+  {
+    id: 1,
+    image: "alex-elias.png",
+    title: "Estrategias de Marketing Innovadoras",
+    description:
+      "Transformamos tu negocio con estrategias de vanguardia que generan resultados medibles y sostenibles en el tiempo",
+    btnCTA1: {
+      id: 1,
+      buttonHref: "#",
+      buttonText: "Descubre Nuestros Servicios",
+    },
+    btnCTA2: {
+      id: 2,
+      buttonHref: "#",
+      buttonText: "Ver más casos de éxito",
+    },
+    gradient: "from-purple-600 via-pink-600 to-red-600",
+    layout: "left",
+  },
+  {
+    id: 2,
+    image: "clinton-flores.png",
+    title: "Experiencia de Cliente Excepcional",
+    description:
+      "Creamos experiencias memorables que fidelizan a tus clientes y aumentan la rentabilidad de tu negocio",
+    btnCTA1: {
+      id: 1,
+      buttonHref: "#",
+      buttonText: "Comienza Ahora",
+    },
+    btnCTA2: {
+      id: 2,
+      buttonHref: "#",
+      buttonText: "Descubre Nuestros Servicios",
+    },
+    gradient: "from-blue-600 via-cyan-600 to-teal-600",
+    layout: "right",
+  },
+  {
+    id: 3,
+    image: "elkin-avendano.png",
+    title: "Desarrollo Web Estratégico",
+    description:
+      "Sitios web que convierten visitantes en clientes, optimizados para generar el máximo impacto en tu audiencia",
+    btnCTA1: {
+      id: 1,
+      buttonHref: "#",
+      buttonText: "Ver Proyectos",
+    },
+    btnCTA2: {
+      id: 2,
+      buttonHref: "#",
+      buttonText: "Conoce al Equipo",
+    },
+    gradient: "from-green-600 via-emerald-600 to-cyan-600",
+    layout: "left",
+  },
+];
+
+export const ServiceCardData: IServiceCard[] = [
+  {
+    id: 1,
+    titleService: "Marketing Estratégico",
+    descriptionService:
+      "Consultoría, conferencias y desarrollo de planes en Marketing Estratégico y Estrategia Digital.",
+    icon: BarChart3,
+    slug: "marketing-estrategico",
+  },
+  {
+    id: 2,
+    titleService: "Customer Experience",
+    descriptionService:
+      "Consultoría y conferencias en Customer Experience Management y Service Design.",
+    icon: Users,
+    slug: "customer-experience",
+  },
+  {
+    id: 3,
+    titleService: "Desarrollo Web",
+    descriptionService:
+      "Desarrollo Web e E-Commerce con enfoque estratégico para maximizar resultados.",
+    icon: Lightbulb,
+    slug: "desarrollo-web",
+  },
+];
+
+export const TestimonialCardData: ITestimonialCard[] = [
+  {
+    id: 1,
+    title: "María González",
+    position: "CEO, Empresa Innovadora",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
+  },
+  {
+    id: 2,
+    title: "Carlos Rodríguez",
+    position: "Director de Marketing, Corporación Global",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "Su enfoque estratégico y conocimiento del mercado nos ayudó a posicionarnos como líderes en nuestro sector. Altamente recomendados.",
+  },
+  {
+    id: 3,
+    title: "Laura Martínez",
+    position: "Fundadora, Startup Tecnológica",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "El programa de aceleramiento empresarial fue clave para el crecimiento de nuestra startup. Su equipo es profesional y comprometido con los resultados.",
+  },
+  {
+    id: 4,
+    title: "Roberto Silva",
+    position: "Gerente General, Retail Corp",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "La consultoría en Customer Experience transformó la forma en que interactuamos con nuestros clientes. Increíble retorno de inversión.",
+  },
+  {
+    id: 5,
+    title: "Ana Fernández",
+    position: "Directora de Ventas, Tech Solutions",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "Las conferencias de Marketing Al Día son de altísima calidad. Contenido práctico y aplicable inmediatamente en nuestros procesos.",
+  },
+  {
+    id: 6,
+    title: "Diego Morales",
+    position: "Fundador, E-commerce Plus",
+    imageSource: "https://placeholder.svg?height=100&width=100",
+    quote:
+      "El desarrollo web que realizaron para nosotros superó todas las expectativas. Profesionales, creativos y orientados a resultados.",
   },
 ];
