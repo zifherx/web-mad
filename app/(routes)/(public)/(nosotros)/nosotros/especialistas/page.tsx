@@ -1,5 +1,3 @@
-import React from "react";
-
-export function EspecialistasPage() {
+export default function EspecialistasPage() {
   return <div>EspecialistasPage</div>;
 }

@@ -65,7 +65,11 @@ export function InfoBlock() {
           <p className="mb-4 text-white/90">
             Contáctanos directamente por WhatsApp y te responderemos en minutos.
           </p>
-          <BtnLargeWhatsApp text="Chatea con nosotros" />
+          <BtnLargeWhatsApp
+            text="Chatea con nosotros"
+            celular="hola"
+            mensaje="hola"
+          />
         </CardContent>
       </Card>
     </div>
