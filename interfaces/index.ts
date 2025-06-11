@@ -5,6 +5,7 @@ import {
   Transition,
   VariantLabels,
 } from "framer-motion";
+import { HTMLAttributes, ReactNode } from "react";
 
 export interface SubmenuFooter {
   id: number;
@@ -95,4 +96,32 @@ export interface ITestimonialCard {
   quote: string;
   position: string;
   imageSource: string;
+}
+
+export interface IContentItem extends HTMLAttributes<HTMLDivElement> {
+  title?: string;
+  description?: string;
+  icon?: ReactNode;
+  image?: ReactNode;
+  footer?: ReactNode;
+  className?: string;
+  contentClassName?: string;
+  headerClassName?: string;
+  bodyClassName?: string;
+  footerClassName?: string;
+  variant?: "default" | "card" | "simple";
+}
+
+export interface IServiceMenu {
+  id: number;
+  title: string;
+  slug: string;
+  description: string;
+}
+
+export interface InfoItem {
+  id: number;
+  icon: IconProp;
+  text: string;
+  value: string;
 }
