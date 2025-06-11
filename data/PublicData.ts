@@ -1,4 +1,4 @@
-import { BarChart3, Lightbulb, Mail, Phone, Users } from "lucide-react";
+import { BarChart3, Lightbulb, Mail, MapPin, Phone, Users } from "lucide-react";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -7,7 +7,10 @@ import { MenuFooterProp, SocialButtonProp } from "@/types";
 import {
   CarouselBannerItem,
   ICardCounter,
+  ImageI,
+  InfoItem,
   IServiceCard,
+  IServiceMenu,
   ITestimonialCard,
   LinkIcon,
   SlideItem,
@@ -340,7 +343,8 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 1,
     title: "María González",
     position: "CEO, Empresa Innovadora",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    // imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/shadcn.png",
     quote:
       "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
   },
@@ -348,7 +352,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 2,
     title: "Carlos Rodríguez",
     position: "Director de Marketing, Corporación Global",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/leerob.png",
     quote:
       "Su enfoque estratégico y conocimiento del mercado nos ayudó a posicionarnos como líderes en nuestro sector. Altamente recomendados.",
   },
@@ -356,7 +360,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 3,
     title: "Laura Martínez",
     position: "Fundadora, Startup Tecnológica",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/shadcn.png",
     quote:
       "El programa de aceleramiento empresarial fue clave para el crecimiento de nuestra startup. Su equipo es profesional y comprometido con los resultados.",
   },
@@ -364,7 +368,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 4,
     title: "Roberto Silva",
     position: "Gerente General, Retail Corp",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/leerob.png",
     quote:
       "La consultoría en Customer Experience transformó la forma en que interactuamos con nuestros clientes. Increíble retorno de inversión.",
   },
@@ -372,7 +376,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 5,
     title: "Ana Fernández",
     position: "Directora de Ventas, Tech Solutions",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/shadcn.png",
     quote:
       "Las conferencias de Marketing Al Día son de altísima calidad. Contenido práctico y aplicable inmediatamente en nuestros procesos.",
   },
@@ -380,8 +384,195 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 6,
     title: "Diego Morales",
     position: "Fundador, E-commerce Plus",
-    imageSource: "https://placeholder.svg?height=100&width=100",
+    imageSource: "https://github.com/leerob.png",
     quote:
       "El desarrollo web que realizaron para nosotros superó todas las expectativas. Profesionales, creativos y orientados a resultados.",
+  },
+];
+
+export const SociosEstrategicosData: ImageI[] = [
+  {
+    id: 1,
+    imageAlt: "Campus Romero",
+    imageSource: "campus-romero.png",
+  },
+  {
+    id: 2,
+    imageAlt: "CX Latam Group",
+    imageSource: "cx-latam.png",
+  },
+  {
+    id: 3,
+    imageAlt: "Doppler",
+    imageSource: "doppler.png",
+  },
+  {
+    id: 4,
+    imageAlt: "Marco Vives",
+    imageSource: "marco-cx.png",
+  },
+  {
+    id: 5,
+    imageAlt: "Master Coach 180",
+    imageSource: "master-coach180.png",
+  },
+  {
+    id: 6,
+    imageAlt: "Microsoft",
+    imageSource: "microsoft.png",
+  },
+  {
+    id: 7,
+    imageAlt: "AEVD",
+    imageSource: "logo-aevd.png",
+  },
+  {
+    id: 8,
+    imageAlt: "Ceinfor",
+    imageSource: "logo-ceinfor.png",
+  },
+  {
+    id: 9,
+    imageAlt: "Code",
+    imageSource: "logo-code.png",
+  },
+  {
+    id: 10,
+    imageAlt: "Código Empresarial",
+    imageSource: "logo-codigo-empresarial.png",
+  },
+  {
+    id: 11,
+    imageAlt: "Domingo Savio",
+    imageSource: "logo-domingo-savio.png",
+  },
+  {
+    id: 12,
+    imageAlt: "Ek Consulting",
+    imageSource: "logo-ek-consulting.png",
+  },
+  {
+    id: 13,
+    imageAlt: "GMA",
+    imageSource: "logo-gma.png",
+  },
+  {
+    id: 14,
+    imageAlt: "Group MarkeThing",
+    imageSource: "logo-group-markething.png",
+  },
+  {
+    id: 15,
+    imageAlt: "Indice Capital",
+    imageSource: "logo-indice-capital.png",
+  },
+  {
+    id: 16,
+    imageAlt: "IPN",
+    imageSource: "logo-ipn.png",
+  },
+  {
+    id: 17,
+    imageAlt: "Ismac",
+    imageSource: "logo-ismac.png",
+  },
+  {
+    id: 18,
+    imageAlt: "Megavatio",
+    imageSource: "logo-megavatio.png",
+  },
+  {
+    id: 19,
+    imageAlt: "Mono & Co",
+    imageSource: "logo-monoco.png",
+  },
+  {
+    id: 20,
+    imageAlt: "Municipalidad de Lima",
+    imageSource: "logo-muni-lima.png",
+  },
+  {
+    id: 21,
+    imageAlt: "Peruano Innovador",
+    imageSource: "logo-peruano-innovador.png",
+  },
+  {
+    id: 22,
+    imageAlt: "Prodequa",
+    imageSource: "logo-prodequa.png",
+  },
+];
+
+export const MenuServicios: IServiceMenu[] = [
+  {
+    id: 1,
+    title: "Capacitación",
+    slug: "capacitacion",
+    description: "Cursos de capacitación en Gestión Comercial, Marketing y CX",
+  },
+  {
+    id: 2,
+    title: "Conferencias",
+    slug: "conferencias",
+    description: "Conferencias de alto impacto",
+  },
+  {
+    id: 3,
+    title: "Customer Experience",
+    slug: "customer-experience",
+    description:
+      "Consultoría y conferencias en Customer Experience Management y Service Design",
+  },
+  {
+    id: 4,
+    title: "Web y E-Commerce",
+    slug: "desarrollo-web-ecommerce",
+    description: "Soluciones en Desarrollo Web y Comercio Electrónico",
+  },
+  {
+    id: 5,
+    title: "Marketing Estratégico",
+    slug: "marketing-estrategico",
+    description:
+      "Consultoría y conferencias en Marketing Estratéfico y Estrategia Digital",
+  },
+  {
+    id: 6,
+    title: "Modelos de Negocio",
+    slug: "modelos-negocio",
+    description: "Desarrollo y ejecución de modelos de negocio",
+  },
+  {
+    id: 7,
+    title: "Planes de Marketing",
+    slug: "planes-marketing",
+    description: "Desarrollo de planes en Marketing Estratégico",
+  },
+  {
+    id: 8,
+    title: "Publicidad Estratégica",
+    slug: "publicidad-estrategica",
+    description: "Campañas que impactan porque están pensadas desde el cliente",
+  },
+];
+
+export const InfoItemData: InfoItem[] = [
+  {
+    id: 1,
+    icon: Phone,
+    text: "Teléfono",
+    value: "+51 938 163 886",
+  },
+  {
+    id: 2,
+    icon: Mail,
+    text: "Email",
+    value: "info@marketingaldia.net",
+  },
+  {
+    id: 3,
+    icon: MapPin,
+    text: "Dirección",
+    value: "Av. Andrés Belaúnde 147, San Isidro, Lima, Perú",
   },
 ];
