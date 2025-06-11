@@ -27,17 +27,7 @@ export function CarruselHeroSection() {
         <CarouselContent>
           {BannerCarruselData.map((banner) => (
             <CarouselItem key={banner.id}>
-              <BannerItem
-                id={banner.id}
-                title={banner.title}
-                positionImage={banner.positionImage}
-                imageItem={banner.imageItem}
-                motionDivImage={banner.motionDivImage}
-                motionDivText={banner.motionDivText}
-                description={banner.description}
-                btnCTA1={banner.btnCTA1}
-                btnCTA2={banner.btnCTA2}
-              />
+              <BannerItem banner={banner} />
             </CarouselItem>
           ))}
         </CarouselContent>

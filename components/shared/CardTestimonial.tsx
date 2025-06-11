@@ -16,7 +16,7 @@ export function CardTestimonial({
     <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:scale-110">
       <div className="flex flex-col items-center text-center">
         <Avatar className="relative w-16 h-16 mb-4">
-          <AvatarImage src={`/images/testimonial/${imageSource}`} />
+          <AvatarImage src={`${imageSource}`} />
           <AvatarFallback>{title}</AvatarFallback>
         </Avatar>
         {/* <div className="relative w-16 h-16 mb-4">

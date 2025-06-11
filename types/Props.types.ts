@@ -5,6 +5,8 @@ import { IconType } from "react-icons";
 import {
   CarouselBannerItem,
   ICardCounter,
+  ImageI,
+  InfoItem,
   IServiceCard,
   ITestimonialCard,
   ITitle,
@@ -39,7 +41,9 @@ export type SocialButtonProp = {
   srOnly: string;
 };
 
-export type CarouselBannerItemProp = CarouselBannerItem;
+export type CarouselBannerItemProp = {
+  banner: CarouselBannerItem;
+};
 
 export type ITargetLink = "_blank" | "_parent" | "_self" | "_top";
 
@@ -65,3 +69,21 @@ export type ParrafoProp = {
 export type ServiceCardProp = IServiceCard;
 
 export type TestimonialCardProp = ITestimonialCard;
+
+export type CarruselProp = {
+  limit: number;
+  images: ImageI[];
+  className?: string;
+  autoPlay?: boolean;
+  autoPlayInterval?: number;
+};
+
+export type ItemLogoProp = {
+  partner: ImageI;
+};
+
+export type CarruselCustomProp = {
+  images: ImageI[];
+};
+
+export type InfoItemProp = InfoItem;

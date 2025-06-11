@@ -9,17 +9,18 @@ import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { CarouselBannerItemProp } from "@/types";
 
-export function BannerItem({
-  id,
-  title,
-  positionImage,
-  imageItem,
-  motionDivImage,
-  motionDivText,
-  description,
-  btnCTA1,
-  btnCTA2,
-}: CarouselBannerItemProp) {
+export function BannerItem({ banner }: CarouselBannerItemProp) {
+  const {
+    btnCTA1,
+    btnCTA2,
+    description,
+    id,
+    imageItem,
+    motionDivImage,
+    motionDivText,
+    positionImage,
+    title,
+  } = banner;
   return (
     <div
       className={cn(

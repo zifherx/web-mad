@@ -34,3 +34,11 @@ export const parseCounterValue = (
     originalValue: finalNumber,
   };
 };
+
+export const createWhatsappChatLink = (
+  celular: string,
+  mensaje: string
+): string => {
+  const message = encodeURIComponent(mensaje);
+  return `https://wa.me/51${celular}?text=${message}`;
+};

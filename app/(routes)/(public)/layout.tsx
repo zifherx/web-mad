@@ -9,7 +9,7 @@ export default function PublicLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <div>
-      <MotionTransition/>
+      {/* <MotionTransition/> */}
       <Header />
       <main>{children}</main>
       <Footer />
