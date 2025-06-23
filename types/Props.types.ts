@@ -1,12 +1,24 @@
-import { HTMLAttributeAnchorTarget } from "react";
+import { Dispatch, HTMLAttributeAnchorTarget, SetStateAction } from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 
 import {
   CarouselBannerItem,
   ICardCounter,
+  IEspecialidad,
+  IEspecialista,
+  IEspecialistaModal,
+  IFeature,
+  IFiltroEspecialita,
+  IGridSpecialist,
+  IHeroSpecialist,
+  ILegal,
   ImageI,
   InfoItem,
+  INoResults,
+  IProtectionNotice,
+  ISearchAndFilters,
+  IService,
   IServiceCard,
   ITestimonialCard,
   ITitle,
@@ -87,3 +99,73 @@ export type CarruselCustomProp = {
 };
 
 export type InfoItemProp = InfoItem;
+
+export type FeatureProp = {
+  feature: IFeature;
+};
+
+export type ServiceProp = {
+  service: IService;
+};
+
+export type RelatedServiceProp = {
+  relatedServices: IService[];
+};
+
+export type OneServiceProp = {
+  serviceSlug: string;
+};
+
+export type CardEspecialistaProp = {
+  index: number;
+  specialist: IEspecialista;
+  onClick: (specialist: IEspecialista) => void;
+};
+
+export type FiltroEspecialistaProp = IFiltroEspecialita & {
+  especialidadesFiltradas: IEspecialidad[];
+  especialistasFiltrados: IEspecialista[];
+};
+
+export type GridEspecialistasProp = ChoiseEspecialistaProp & {
+  especialistasFiltrados: IEspecialista[];
+};
+
+export type ChoiseEspecialistaProp = {
+  especialistaSeleccionado: IEspecialista | null;
+  setEspecialistaSeleccionado: Dispatch<SetStateAction<IEspecialista | null>>;
+  setBusqueda: Dispatch<SetStateAction<string>>;
+  setFiltroActivo: Dispatch<SetStateAction<string>>;
+};
+
+export type ModelEspecialistaProp = {
+  especialistaSeleccionado: IEspecialista | null;
+  setEspecialistaSeleccionado: Dispatch<SetStateAction<IEspecialista | null>>;
+};
+
+export type StartModalProp = {
+  id: number;
+  icon: IconProp;
+  value: number | string;
+  title: string;
+};
+
+export type LegalProp = {
+  contenido: ILegal;
+};
+
+export type CardProtectionProp = {
+  contenido: IProtectionNotice;
+};
+
+export type HeroSectionSpecialistProps = {
+  kpis: IHeroSpecialist;
+};
+
+export type SearchAndFiltersProps = ISearchAndFilters;
+
+export type NoResultsProps = INoResults;
+
+export type GridSpecialistProps = IGridSpecialist & INoResults;
+
+export type SpecialistModalProps = IEspecialistaModal;

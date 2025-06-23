@@ -11,7 +11,7 @@ export function Navbar() {
   const router = useRouter();
 
   return (
-    <nav className="max-w-7xl mx-auto flex h-28 items-center justify-between">
+    <nav className="max-w-7xl mx-auto flex h-28 px-4 md:px-0 items-center justify-between">
       <Image
         src="/images/logos/logo-mad-original.png"
         alt="Logo Marketing Al Día"

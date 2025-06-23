@@ -20,6 +20,7 @@ export function BtnLargeWhatsApp({
 
   return (
     <Button
+      size="lg"
       className={cn(
         "bg-green-500 text-sm font-medium cursor-pointer shadow transition-all duration-300",
         "hover:bg-green-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2",

@@ -3,7 +3,7 @@ import { MessageSquare, Phone } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-orangeCustom to-pink-600 text-white">
+    <section className="py-20 bg-gradient-to-r from-orangeCustom to-pink-800 text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:texl-6xl font-bold mb-6 animate-in">

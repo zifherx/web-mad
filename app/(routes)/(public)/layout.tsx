@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
 
-import { Footer } from "@/components/shared/Footer";
 import { Header } from "@/components/shared/Header";
-import { MotionTransition } from "@/components/shared/MotionTransition";
+import { Footer2 } from "@/components/shared/Footer2";
 
 export default function PublicLayout({
   children,
@@ -12,7 +11,8 @@ export default function PublicLayout({
       {/* <MotionTransition/> */}
       <Header />
       <main>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
+      <Footer2 />
     </div>
   );
 }
