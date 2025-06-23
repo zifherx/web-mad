@@ -20,7 +20,7 @@ export function InfoBlock() {
       <Card className="shadow-lg border-0 transition-all duration-300 hover:shadow-xl hover:scale-105">
         <CardHeader>
           <CardTitle className="text-md md:text-2xl flex items-center gap-2">
-            <Book className="h-5 w-5 text-redCustom" />
+            <Book className="h-5 w-5 text-orangeCustom" />
             Información de Contacto
           </CardTitle>
         </CardHeader>
@@ -34,7 +34,7 @@ export function InfoBlock() {
       <Card className="shadow-lg border-0 transition-all duration-300 hover:shadow-xl hover:scale-105">
         <CardHeader>
           <CardTitle className="text-md md:text-2xl flex items-center gap-2">
-            <Clock className="h-5 w-5 text-redCustom" />
+            <Clock className="h-5 w-5 text-orangeCustom" />
             Horario de Atención
           </CardTitle>
         </CardHeader>

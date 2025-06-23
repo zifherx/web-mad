@@ -6,7 +6,7 @@ import CountUp from "react-countup";
 
 export function HeroSection() {
   return (
-    <section className="relative py-32 bg-gradient-to-br from-redCustom via-pink-700 to-orangeCustom text-white overflow-hidden">
+    <section className="relative py-32 bg-gradient-to-br from-redCustom via-orangeCustom to-redCustom/90   text-white overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>

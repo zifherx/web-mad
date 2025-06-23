@@ -1,13 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 import { Title } from "@/components/shared/Title";
+import { Carrusel } from "@/components/shared/Carrusel";
 
 import { SociosEstrategicosData } from "@/data";
-import { cn } from "@/lib/utils";
-import { Carrusel } from "@/components/shared/Carrusel";
 
 export function SociosEstrategicosSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,8 +32,8 @@ export function SociosEstrategicosSection() {
     <section className="py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <Title
-          text="Empresas Que Confían En Nosotros"
-          description="Más de 500 empresas han transformado sus negocios con nuestras estrategias y soluciones"
+          text="Socios Estratégicos"
+          description="Trabajamos con las mejores empresas del mundo para ofrecerle soluciones de clase mundial"
         />
 
         <div className="relative">

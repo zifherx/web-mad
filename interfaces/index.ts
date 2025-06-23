@@ -5,7 +5,11 @@ import {
   Transition,
   VariantLabels,
 } from "framer-motion";
-import { HTMLAttributes, ReactNode } from "react";
+import { Dispatch, HTMLAttributes, ReactNode, SetStateAction } from "react";
+
+export interface IGeneral {
+  id: number;
+}
 
 export interface SubmenuFooter {
   id: number;
@@ -22,13 +26,11 @@ export interface LinkIcon {
 export interface CarouselBannerItem {
   id: number;
   title: string;
+  category: string;
   description: string;
   btnCTA1: ButtonI;
   btnCTA2: ButtonI;
-  positionImage: ImagePositionProp;
   imageItem: ImageI;
-  motionDivImage: ParameterMotion;
-  motionDivText: ParameterMotion;
 }
 
 export interface ImageI {
@@ -88,6 +90,7 @@ export interface IServiceCard {
   slug: string;
   titleService: string;
   descriptionService: string;
+  features: IEspecialidad[];
 }
 
 export interface ITestimonialCard {
@@ -124,4 +127,132 @@ export interface InfoItem {
   icon: IconProp;
   text: string;
   value: string;
+}
+
+export interface IFeature {
+  id: number;
+  title: string;
+  description: string;
+}
+
+export interface IService {
+  id: number;
+  title: string;
+  menuTitle: string;
+  menuDescription: string;
+  slug: string;
+  features: IFeaturing[];
+  benefits: iBenefit[];
+  targetAudience: ITargetAudience[];
+  process: IProcess[];
+  shortDescription: string;
+  longDescription: string;
+  image: string;
+  icon: IconProp;
+}
+
+export interface IProcess {
+  step: number;
+  title: string;
+  description: string;
+}
+
+export interface ITargetAudience extends IGeneral {
+  target: string;
+}
+
+export interface IFeaturing extends IGeneral {
+  feature: string;
+}
+
+export interface iBenefit extends IGeneral {
+  benefit: string;
+  description: string;
+}
+
+export interface IFiltroEspecialita {
+  busqueda: string;
+  setBusqueda: Dispatch<SetStateAction<string>>;
+  filtroActivo: string;
+  setFiltroActivo: Dispatch<SetStateAction<string>>;
+}
+
+export interface IEspecialistaFiltros {
+  search: string;
+  speciality: string;
+}
+
+export interface IEspecialidad {
+  id: number;
+  nombre: string;
+}
+
+export interface IEspecialista {
+  id: number;
+  slug: string;
+  nombre: string;
+  especialidad: string;
+  pais: string;
+  experiencia: string;
+  imagen: string;
+  resena: string;
+  especialidades: IEspecialidad[];
+  rating: number;
+  proyectos: number;
+  color: string;
+  descripcionCompleta: string;
+  logros: ILogro[];
+}
+
+export interface ILogro {
+  id: number;
+  logro: string;
+}
+
+export interface IParrafo {
+  id: number;
+  parrafo: string;
+}
+
+export interface ILegal {
+  id: number;
+  slug: string;
+  title: string;
+  icon: IconProp;
+  content: IParrafo[];
+}
+
+export interface IProtectionNotice {
+  id: number;
+  title: string;
+  content: IParrafo[];
+}
+
+export interface IHeroSpecialist {
+  totalSpecialists: number;
+  totalProjects: number;
+  averageRating: number;
+}
+
+export interface ISearchAndFilters {
+  filters: IEspecialistaFiltros;
+  onFiltersChange: (filters: IEspecialistaFiltros) => void;
+  specialtyOptions: IEspecialidad[];
+  resultsCount: number;
+}
+
+export interface INoResults {
+  onClearFilters: () => void;
+}
+
+export interface IGridSpecialist {
+  resultsCount: number;
+  specialists: IEspecialista[];
+  handleSpecialistClick: (specialist: IEspecialista) => void;
+}
+
+export interface IEspecialistaModal {
+  specialist: IEspecialista | null;
+  isOpen: boolean;
+  onClose: () => void;
 }

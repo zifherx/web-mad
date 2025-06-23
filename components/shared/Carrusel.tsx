@@ -38,7 +38,7 @@ export function Carrusel({ images }: CarruselCustomProp) {
           {images.map((partner) => (
             <CarouselItem
               key={partner.id}
-              className="basis-1/6 md:basis-1/6 lg:basis-1/6 p-2"
+              className="basis-3/6 md:basis-1/6 lg:basis-1/6 p-2"
             >
               <ItemLogo partner={partner} />
             </CarouselItem>

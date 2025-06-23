@@ -14,7 +14,7 @@ export function Footer() {
 
   return (
     <footer className="bg-blueCustom text-white">
-      <div className="container  mx-auto px-4 py-12 md:py-16">
+      <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-14">
           <div className="space-y-5">
             <Image
@@ -43,15 +43,17 @@ export function Footer() {
               )}
             </div>
           </div>
-          {MenuFooterData.map(({ childrens, id, titleMenu }) => (
-            <OptionFooter
-              key={id}
-              id={id}
-              childrens={childrens}
-              titleMenu={titleMenu}
-            />
-          ))}
-          <div>
+          {MenuFooterData.filter((item) => [1, 2, 5].includes(item.id)).map(
+            ({ childrens, id, titleMenu }) => (
+              <OptionFooter
+                key={id}
+                id={id}
+                childrens={childrens}
+                titleMenu={titleMenu}
+              />
+            )
+          )}
+          <div className="mt-10 md:mt-0 text-center md:text-left mx-auto">
             <h3 className="text-xl font-bold mb-4">Contacto</h3>
             <ul className="space-y-5">
               <li className="flex items-center">
@@ -83,11 +85,11 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t-2 border-primary-foreground/10 py-6">
-        <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-primary-foreground/80">
             © {today} Marketing Al Día. Todos los derechos reservados
           </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
+          <div className="flex flex-col md:flex-row space-x-4 space-y-1 mt-4 md:mt-0">
             <LinkHref
               href="/politiva-privacidad"
               text="Política de Privacidad"

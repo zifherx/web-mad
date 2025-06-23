@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function CTASection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
@@ -22,9 +23,12 @@ export function CTASection() {
             <Button
               size="lg"
               variant="outline"
-              className="border border-gray-300 hover:border-orangeCustom hover:text-orangeCustom cursor-pointer"
+              className="bg-transparent border border-gray-300 hover:border-orangeCustom hover:text-orangeCustom cursor-pointer"
+              asChild
             >
-              Ver Nuestros Casos de Éxito
+              <Link href="/nosotros/especialistas">
+                Ver a Nuestros Especialistas
+              </Link>
             </Button>
           </div>
         </div>
