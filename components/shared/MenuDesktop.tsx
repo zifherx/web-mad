@@ -12,10 +12,11 @@ import {
   NavigationMenuContent,
 } from "../ui/navigation-menu";
 
-import { cn } from "@/lib/utils";
 import { ListItem } from "./ListItemMenu";
-import { MenuServicios } from "@/data";
 import { Button } from "../ui/button";
+
+import { cn } from "@/lib/utils";
+import { CatalogoServiciosData, MenuServicios } from "@/data";
 
 export function MenuDesktop() {
   return (
@@ -69,11 +70,17 @@ export function MenuDesktop() {
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[600px] md:grid-cols-2">
-              {MenuServicios.map(({ description, id, slug, title }) => (
-                <ListItem key={id} href={`/servicios/${slug}`} title={title}>
-                  {description}
-                </ListItem>
-              ))}
+              {CatalogoServiciosData.map(
+                ({ menuDescription, menuTitle, id, slug }) => (
+                  <ListItem
+                    key={id}
+                    href={`/servicios/${slug}`}
+                    title={menuTitle}
+                  >
+                    {menuDescription}
+                  </ListItem>
+                )
+              )}
               <li className="col-span-full mt-4 flex justify-center">
                 <Button
                   asChild

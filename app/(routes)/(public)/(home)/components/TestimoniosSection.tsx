@@ -9,27 +9,10 @@ import { Title } from "@/components/shared/Title";
 import { NUMERIC } from "@/utils/Constants";
 
 import { TestimonialCardData } from "@/data";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function TestimoniosSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonialsPerView = NUMERIC.CUATRO;
-
-  const nextTestimonials = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex + testimonialsPerView >= TestimonialCardData.length
-        ? 0
-        : prevIndex + testimonialsPerView
-    );
-  };
-
-  const prevTestimonials = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0
-        ? Math.max(0, TestimonialCardData.length - testimonialsPerView)
-        : Math.max(0, prevIndex - testimonialsPerView)
-    );
-  };
 
   const visibleTestimonials = TestimonialCardData.slice(
     currentIndex,
@@ -38,7 +21,7 @@ export function TestimoniosSection() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto md:px-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-6">
         <Title
           text="Lo Que Dicen Nuestros Clientes"
           description="Testimonios reales de empresarios y profesionales que han transformado sus negocios con nosotros"
@@ -58,20 +41,6 @@ export function TestimoniosSection() {
               )
             )}
           </div>
-          <Button
-            onClick={prevTestimonials}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-10 bg-white text-redCustom hover:bg-gray-100 rounded-full p-3 shadow-lg  transition-all duration-300 hover:scale-105 cursor-pointer"
-            aria-label="Testimonios anteriores"
-          >
-            <ChevronLeft className="h-6 w-6" />
-          </Button>
-          <Button
-            onClick={nextTestimonials}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-10 bg-white text-redCustom hover:bg-gray-100 rounded-full p-3 shadow-lg  transition-all duration-300 hover:scale-105 cursor-pointer"
-            aria-label="Testimonios siguientes"
-          >
-            <ChevronRight className="h-6 w-6" />
-          </Button>
         </div>
         <div className="flex justify-center mt-8 space-x-2">
           {Array.from({
