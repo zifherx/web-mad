@@ -16,7 +16,6 @@ import {
   ImageI,
   InfoItem,
   INoResults,
-  IParrafo,
   IProtectionNotice,
   ISearchAndFilters,
   IService,

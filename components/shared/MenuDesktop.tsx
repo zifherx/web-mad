@@ -63,6 +63,31 @@ export function MenuDesktop() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-2">
+                <NavigationMenuLink asChild>
+                  <a
+                    href="/nosotros/quienes-somos"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-orangeCustom/60 to-redCustom p-6 no-underline outline-none focus:shadow-md"
+                  >
+                    <div className="mb-2 mt-4 text-lg font-medium text-white">
+                      Marketing Al Día
+                    </div>
+                    <p className="text-sm leading-tight text-gray-100">
+                      Conoce más sobre nuestra comunidad y misión
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href="/nosotros/quienes-somos" title="Quiénes Somos">
+                Nuestra historia, misión y visión empresarial
+              </ListItem>
+              <ListItem href="/nosotros/especialistas" title="Especialistas">
+                Conoce a nuestro equipo de expertos
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent font-semibold text-lg hover:bg-transparent hover:text-redCustom/80">
@@ -94,8 +119,18 @@ export function MenuDesktop() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent font-semibold text-lg hover:bg-transparent hover:text-redCustom/80">
-            Comunidad
+            Comunidad Comunidad
           </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[300px] gap-4">
+              <ListItem href="/comunidad/madnews" title="Madnews">
+                Noticias y tendencas del mundo del marketing
+              </ListItem>
+              <ListItem href="/comunidad/podcast" title="Podcast">
+                Escucha nuestros podcasts con expertos
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
           <NavigationMenuContent>
             <ul className="grid w-[300px] gap-4">
               <ListItem href="/comunidad/madnews" title="Madnews">
@@ -108,6 +143,15 @@ export function MenuDesktop() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
+          <NavigationMenuLink
+            asChild
+            className={cn(
+              navigationMenuTriggerStyle(),
+              "bg-transparent font-semibold text-lg hover:bg-transparent hover:text-redCustom/80"
+            )}
+          >
+            <Link href="/contacto">Contacto</Link>
+          </NavigationMenuLink>
           <NavigationMenuLink
             asChild
             className={cn(

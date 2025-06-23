@@ -36,7 +36,6 @@ import {
   IProtectionNotice,
   IService,
   IServiceCard,
-  IServiceMenu,
   ITestimonialCard,
   LinkIcon,
   SlideItem,
@@ -454,6 +453,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     position: "CEO, Empresa Innovadora",
     // imageSource: "https://placeholder.svg?height=100&width=100",
     imageSource: "https://github.com/shadcn.png",
+    // imageSource: "https://placeholder.svg?height=100&width=100",
     quote:
       "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
   },

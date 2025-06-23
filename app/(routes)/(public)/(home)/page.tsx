@@ -1,3 +1,4 @@
+import { HeroSection } from "./components/HeroSection";
 import { CarruselHeroSection } from "./components/CarruselHeroSection";
 import { CounterSection } from "./components/CounterSection";
 import { QuienesSomosSection } from "./components/QuienesSomosSection";
