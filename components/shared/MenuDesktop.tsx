@@ -16,7 +16,7 @@ import { ListItem } from "./ListItemMenu";
 import { Button } from "../ui/button";
 
 import { cn } from "@/lib/utils";
-import { CatalogoServiciosData, MenuServicios } from "@/data";
+import { CatalogoServiciosData } from "@/data";
 
 export function MenuDesktop() {
   return (

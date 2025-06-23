@@ -1,3 +1,5 @@
+/** @typescript-eslint/no-explicit-any */
+
 "use client";
 
 import { useState } from "react";
@@ -53,9 +55,9 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = async (values: any) => {
+  const onSubmit = async (values: ConctactFormValues) => {
     try {
-    } catch (err) {
+    } catch (err: any) {
       console.log(err);
     }
   };

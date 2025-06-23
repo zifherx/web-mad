@@ -9,7 +9,7 @@ import { BtnLargeWhatsApp } from "@/components/shared/BtnLargeWhatsApp";
 import { ServiceProp } from "@/types";
 
 export function CTASection({ service }: ServiceProp) {
-  const { shortTitle } = service;
+  const { menuTitle } = service;
 
   return (
     <section className="py-20 bg-gradient-to-r from-orangeCustom to-redCustom text-white">
@@ -26,7 +26,7 @@ export function CTASection({ service }: ServiceProp) {
           </h2>
           <p className="text-xl mb-8">
             Contáctanos hoy mismo y descubre cómo nuestro servicio de{" "}
-            {service.shortTitle} puede ayudarte a alcanzar tus objetivos.
+            {menuTitle} puede ayudarte a alcanzar tus objetivos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button asChild size="lg" variant="secondary">

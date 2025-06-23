@@ -8,7 +8,7 @@ import { ServiceProp } from "@/types";
 import { ArrowRight } from "lucide-react";
 
 export function MotionRelatedService({ service }: ServiceProp) {
-  const { id, slug, title, shortTitle, longDescription } = service;
+  const { id, slug, title, menuTitle, longDescription } = service;
 
   return (
     <motion.div
@@ -30,7 +30,7 @@ export function MotionRelatedService({ service }: ServiceProp) {
           <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300"></div>
           <div className="absolute inset-0 flex items-center justify-center">
             <h3 className="text-xl font-bold text-white text-center px-4">
-              {shortTitle}
+              {menuTitle}
             </h3>
           </div>
         </div>
