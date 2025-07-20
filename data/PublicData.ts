@@ -77,8 +77,8 @@ export const MenuFooterData: MenuFooterProp[] = [
     childrens: [
       {
         id: 1,
-        titleOption: "Marketing Estratégico",
         linkOption: "/servicios/marketing-estrategico",
+        titleOption: "Marketing Estratégico",
       },
       {
         id: 2,
@@ -108,6 +108,22 @@ export const MenuFooterData: MenuFooterProp[] = [
       },
       {
         id: 2,
+        titleOption: "Conferencias",
+        linkOption: "/servicios/conferencias",
+      },
+    ],
+  },
+  {
+    id: 3,
+    titleMenu: "Comunidad",
+    childrens: [
+      {
+        id: 1,
+        titleOption: "MAD News",
+        linkOption: "/comunidad/mad-news",
+      },
+      {
+        id: 2,
         titleOption: "Eventos",
         linkOption: "/comunidad/eventos",
       },
@@ -115,6 +131,22 @@ export const MenuFooterData: MenuFooterProp[] = [
         id: 3,
         titleOption: "Recursos",
         linkOption: "/comunidad/recursos",
+      },
+    ],
+  },
+  {
+    id: 4,
+    titleMenu: "Legal",
+    childrens: [
+      {
+        id: 1,
+        titleOption: "Política de Privacidad",
+        linkOption: "/legal/politica-privacidad",
+      },
+      {
+        id: 2,
+        titleOption: "Términos y Condiciones",
+        linkOption: "/legal/terminos-condiciones",
       },
     ],
   },
@@ -366,6 +398,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     // imageSource: "https://placeholder.svg?height=100&width=100",
     imageSource: "https://github.com/shadcn.png",
     // imageSource: "https://placeholder.svg?height=100&width=100",
+    // imageSource: "https://placeholder.svg?height=100&width=100",
     quote:
       "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
   },
@@ -566,6 +599,18 @@ export const ShortSeviceData: IFeature[] = [
     title: "Enfoque Estratégico",
     description:
       "No nos quedamos en la superficie. Analizamos a fondo tu negocio para crear soluciones que realmente impacten.",
+  },
+  {
+    id: 2,
+    title: "Experiencia Comprobada",
+    description:
+      "Contamos con un equipo de expertos con amplia trayectoria en diferentes industrias y mercados.",
+  },
+  {
+    id: 3,
+    title: "Resultados Medibles",
+    description:
+      "Nos enfocamos en generar resultados tangibles y medibles que impacten positivamente en tu negocio.",
   },
   {
     id: 2,
@@ -971,7 +1016,7 @@ export const CatalogoServiciosData: IService[] = [
   },
   {
     id: 4,
-    title: "Customer Experience MAnagement y Service Design",
+    title: "Customer Experience Management y Service Design",
     menuTitle: "Customer Experience",
     menuDescription: "Experiencias que enamoran",
     slug: "customer-experience",

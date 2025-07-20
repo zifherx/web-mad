@@ -5,6 +5,10 @@ import {
   Transition,
   VariantLabels,
 } from "framer-motion";
+
+export interface IGeneral {
+  id: number;
+}
 import { Dispatch, HTMLAttributes, ReactNode, SetStateAction } from "react";
 
 export interface IGeneral {
