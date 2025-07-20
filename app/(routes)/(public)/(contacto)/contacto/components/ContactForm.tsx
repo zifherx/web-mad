@@ -57,6 +57,7 @@ export function ContactForm() {
 
   const onSubmit = async (values: ConctactFormValues) => {
     try {
+      console.log({ values });
     } catch (err: any) {
       console.log(err);
     }

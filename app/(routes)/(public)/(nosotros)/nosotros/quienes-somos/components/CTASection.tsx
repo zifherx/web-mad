@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-redCustom to-pink-600 text-white">
+    <section className="py-20 bg-gradient-to-r from-redCustom to-orangeCustom text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

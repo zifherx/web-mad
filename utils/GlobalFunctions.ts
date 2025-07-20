@@ -1,4 +1,4 @@
-import { NumerParseResult } from "@/interfaces";
+import { IService, NumerParseResult } from "@/interfaces";
 import { Metadata } from "next";
 
 export const parseCounterValue = (
@@ -73,4 +73,21 @@ export const METADATA: Metadata = {
   verification: {
     google: "google",
   },
+};
+
+export const getRandomServices = (servicios: IService[]): IService[] => {
+  if (servicios.length <= 4) {
+    return [...servicios];
+  }
+
+  const servicesCopy = [...servicios];
+  const randomServices: IService[] = [];
+
+  for (let i = 0; i < 4; i++) {
+    const randonIndex = Math.floor(Math.random() * servicesCopy.length);
+    randomServices.push(servicesCopy[randonIndex]);
+    servicesCopy.splice(randonIndex, 1);
+  }
+
+  return randomServices;
 };

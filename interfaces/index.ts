@@ -5,6 +5,10 @@ import {
   Transition,
   VariantLabels,
 } from "framer-motion";
+
+export interface IGeneral {
+  id: number;
+}
 import { Dispatch, HTMLAttributes, ReactNode, SetStateAction } from "react";
 
 export interface IGeneral {
@@ -82,15 +86,6 @@ export interface SlideItem {
   btnCTA2: ButtonI;
   gradient: string;
   layout: ImagePositionProp;
-}
-
-export interface IServiceCard {
-  id: number;
-  icon: IconProp;
-  slug: string;
-  titleService: string;
-  descriptionService: string;
-  features: IEspecialidad[];
 }
 
 export interface ITestimonialCard {
@@ -255,4 +250,12 @@ export interface IEspecialistaModal {
   specialist: IEspecialista | null;
   isOpen: boolean;
   onClose: () => void;
+}
+
+export interface IOrbitalesElement {
+  id: number;
+  label: string;
+  icon: IconProp;
+  color: string;
+  angle: number;
 }

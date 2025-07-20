@@ -8,9 +8,12 @@ import { Button } from "@/components/ui/button";
 import { CardService } from "@/components/shared/CardService";
 import { Title } from "@/components/shared/Title";
 
-import { ServiceCardData } from "@/data";
+import { CatalogoServiciosData } from "@/data";
+import { getRandomServices } from "@/utils/GlobalFunctions";
 
 export function NuestroServiciosSection() {
+  const catalogoServiciosRandom = getRandomServices(CatalogoServiciosData);
+
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
@@ -31,15 +34,8 @@ export function NuestroServiciosSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          {ServiceCardData.map(
-            ({
-              id,
-              descriptionService,
-              icon,
-              titleService,
-              slug,
-              features,
-            }) => (
+          {catalogoServiciosRandom.map(
+            ({ id, icon, slug, features, shortDescription, menuTitle }) => (
               <motion.div
                 key={id}
                 initial={{ opacity: 0, y: 50 }}
@@ -50,9 +46,8 @@ export function NuestroServiciosSection() {
                 className="group"
               >
                 <CardService
-                  id={id}
-                  titleService={titleService}
-                  descriptionService={descriptionService}
+                  menuTitle={menuTitle}
+                  shortDescription={shortDescription}
                   icon={icon}
                   slug={slug}
                   features={features}
