@@ -10,11 +10,9 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { StatsPopUp } from "@/components/shared/StatsPopUp";
 
 import { SpecialistModalProps } from "@/types";
-import { StatsPopUp } from "@/components/shared/StatsPopUp";
 
 export function EspecialistaModalSection({
   isOpen,
@@ -32,12 +30,12 @@ export function EspecialistaModalSection({
       >
         <div className="relative">
           {/* Header con imagen */}
-          <div className="relative h-64">
+          <div className="relative h-80">
             <Image
               src={`/images/especialistas/${specialist.imagen}`}
               alt={specialist.nombre}
               fill
-              className="object-cover"
+              className="object-contain"
             />
             <div
               className={`absolute inset-0 bg-gradient-to-t ${specialist.color} opacity-40`}

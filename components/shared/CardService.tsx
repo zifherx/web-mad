@@ -16,9 +16,9 @@ import { Button } from "../ui/button";
 import { ServiceCardProp } from "@/types";
 
 export function CardService({
-  descriptionService,
+  shortDescription,
   icon: Icon,
-  titleService,
+  menuTitle,
   slug,
   features,
 }: ServiceCardProp) {
@@ -33,18 +33,18 @@ export function CardService({
           <Icon className="h-8 w-8 text-white" />
         </motion.div>
         <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-redCustom transition-colors">
-          {titleService}
+          {menuTitle}
         </CardTitle>
-        <CardDescription className="text-gray-600">
-          {descriptionService}
+        <CardDescription className="text-gray-600 line-clamp-2">
+          {shortDescription}
         </CardDescription>
       </CardHeader>
       <CardContent className="pt-0">
         <ul className="space-y-2 mb-6">
-          {features.map(({ id, nombre }) => (
+          {features.slice(0, 4).map(({ id, feature }) => (
             <li key={id} className="flex items-center text-sm text-gray-600">
               <CheckCircle className="w-4 h-4 text-redCustom mr-2 shrink-0" />
-              {nombre}
+              {feature}
             </li>
           ))}
         </ul>
@@ -52,10 +52,12 @@ export function CardService({
         {/* Acciones */}
         <Button
           variant="outline"
-          className="w-full group-hover:bg-redCustom group-hover:text-white group-hover:border-redCustom transition-all duration-300"
+          className="w-full hover:bg-redCustom hover:text-white group-hover:bg-redCustom group-hover:text-white group-hover:border-redCustom transition-all duration-300"
           asChild
         >
           <Link href={`/servicios/${slug}`}>
+            Saber más
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             Saber más
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
