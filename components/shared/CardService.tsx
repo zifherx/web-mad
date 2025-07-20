@@ -58,6 +58,8 @@ export function CardService({
           <Link href={`/servicios/${slug}`}>
             Saber más
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            Saber más
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </Button>
       </CardContent>
