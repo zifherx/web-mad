@@ -19,7 +19,6 @@ import {
   IProtectionNotice,
   ISearchAndFilters,
   IService,
-  IServiceCard,
   ITestimonialCard,
   ITitle,
   SlideItem,
@@ -78,7 +77,17 @@ export type ParrafoProp = {
   align: AlignText;
 };
 
-export type ServiceCardProp = IServiceCard;
+export type ServiceCardProp = Omit<
+  IService,
+  | "id"
+  | "title"
+  | "menuDescription"
+  | "benefits"
+  | "targetAudience"
+  | "process"
+  | "longDescription"
+  | "image"
+>;
 
 export type TestimonialCardProp = ITestimonialCard;
 
