@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+
 import { MenuDesktop } from "./MenuDesktop";
 import { MenuMobile } from "./MenuMobile";
 import { Button } from "../ui/button";
-import Link from "next/link";
 
 export function Navbar() {
   const router = useRouter();
