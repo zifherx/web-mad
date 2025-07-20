@@ -1,5 +1,6 @@
 import {
   AlertCircle,
+  Award,
   BarChart3,
   BookOpen,
   Cookie,
@@ -18,6 +19,8 @@ import {
   Target,
   UserCheck,
   Users,
+  Video,
+  Zap,
 } from "lucide-react";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
@@ -33,9 +36,9 @@ import {
   ILegal,
   ImageI,
   InfoItem,
+  IOrbitalesElement,
   IProtectionNotice,
   IService,
-  IServiceCard,
   ITestimonialCard,
   LinkIcon,
   SlideItem,
@@ -252,8 +255,8 @@ export const BannerCarruselData: CarouselBannerItem[] = [
       "No inspiramos por inspirar, inspiramos para accionar. Conferencias diseñadas para remover estructuras mentales y activar decisiones.",
     imageItem: {
       id: 1,
-      imageSource: "clinton-flores.png",
-      imageAlt: "Clinton Flores",
+      imageSource: "walter-cabanillas.png",
+      imageAlt: "Walter Cabanillas",
     },
     btnCTA1: {
       id: 1,
@@ -352,97 +355,6 @@ export const SlidesHeroData: SlideItem[] = [
     },
     gradient: "from-green-600 via-emerald-600 to-cyan-600",
     layout: "left",
-  },
-];
-
-export const ServiceCardData: IServiceCard[] = [
-  {
-    id: 1,
-    titleService: "Marketing Estratégico",
-    descriptionService:
-      "Estrategias modernas alineadas a los nuevos comportamientos del consumidor",
-    icon: BarChart3,
-    slug: "marketing-estrategico",
-    features: [
-      {
-        id: 1,
-        nombre: "Consultoría especializada",
-      },
-      {
-        id: 2,
-        nombre: "Conferencias de impacto",
-      },
-      {
-        id: 3,
-        nombre: "Estrategia digital",
-      },
-    ],
-  },
-  {
-    id: 2,
-    titleService: "Customer Experience",
-    descriptionService:
-      "Diseñamos experiencias que el cliente no quiere abandonar",
-    icon: Users,
-    slug: "customer-experience",
-    features: [
-      {
-        id: 1,
-        nombre: "Service Design",
-      },
-      {
-        id: 2,
-        nombre: "Journey Mapping",
-      },
-      {
-        id: 3,
-        nombre: "Gestión CX Integral",
-      },
-    ],
-  },
-  {
-    id: 3,
-    titleService: "Desarrollo Web",
-    descriptionService:
-      "Sitios web y E-Commerce pensados para conversión y escalabilidad",
-    icon: Lightbulb,
-    slug: "desarrollo-web",
-    features: [
-      {
-        id: 1,
-        nombre: "Código nativo",
-      },
-      {
-        id: 2,
-        nombre: "UX/UI optimizado",
-      },
-      {
-        id: 3,
-        nombre: "E-Commerce 24/7",
-      },
-    ],
-  },
-  {
-    id: 4,
-    titleService: "Publicidad Estratégica",
-    descriptionService:
-      "Campañas que impactan porque están pensadas desde el cliente",
-    icon: MapPin,
-    slug: "desarrollo-web",
-    features: [
-      {
-        id: 1,
-        nombre: "Creatividad + estrategia",
-      },
-      {
-        id: 2,
-        nombre: "Medios integrados",
-      },
-      {
-        id: 3,
-        nombre: "ROI medible",
-      },
-    ],
   },
 ];
 
@@ -619,6 +531,11 @@ export const SociosEstrategicosData: ImageI[] = [
     id: 24,
     imageAlt: "Zona Urea",
     imageSource: "logo-zona-urea.png",
+  },
+  {
+    id: 25,
+    imageAlt: "Lety Mind",
+    imageSource: "logo-letymind.png",
   },
 ];
 
@@ -1785,6 +1702,22 @@ export const CatalogoServiciosData: IService[] = [
     image: "https://placehold.co/500x300",
     icon: Rocket,
   },
+  {
+    id: 10,
+    title: "Audiovisuales y Social Media",
+    slug: "audiovisuales-social-media",
+    menuTitle: "Audiovisuales",
+    menuDescription: "Contenido que conecta",
+    shortDescription:
+      "El contenido es el rey, pero la forma en que lo presentas es la reina. Creamos audiovisuales que cuentan historias y conectan.",
+    longDescription: "",
+    features: [],
+    benefits: [],
+    targetAudience: [],
+    process: [],
+    image: "https://placehold.co/500x300",
+    icon: Video,
+  },
 ];
 
 export const getServiceBySlug = (slug: string): IService | undefined => {
@@ -2034,7 +1967,7 @@ export const EspecialistasData: IEspecialista[] = [
     id: 5,
     nombre: "Fernando Rojas",
     slug: "fernando-rojas",
-    especialidad: "Transformación Digital",
+    especialidad: "Desarrollo Software y Machine Learning",
     pais: "Perú",
     experiencia: "8+ años",
     imagen: "fernando-rojas.png",
@@ -2494,5 +2427,43 @@ export const TerminosImportantData: IProtectionNotice[] = [
           "Estamos comprometidos a proporcionar los más altos estándares de servicio.",
       },
     ],
+  },
+];
+
+export const OrbitalesElementsData: IOrbitalesElement[] = [
+  {
+    id: 1,
+    label: "Cliente",
+    angle: 0,
+    icon: Users,
+    color: "from-blue-500 to-blue-600",
+  },
+  {
+    id: 2,
+    label: "Estrategia",
+    angle: 72,
+    icon: Target,
+    color: "from-green-500 to-green-600",
+  },
+  {
+    id: 3,
+    label: "Innovación",
+    angle: 144,
+    icon: Lightbulb,
+    color: "from-yellow-500 to-yellow-600",
+  },
+  {
+    id: 4,
+    label: "Resultados",
+    angle: 216,
+    icon: Award,
+    color: "from-purple-500 to-purple-600",
+  },
+  {
+    id: 5,
+    label: "Crecimiento",
+    angle: 288,
+    icon: Zap,
+    color: "from-orange-500 to-orange-600",
   },
 ];

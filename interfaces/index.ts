@@ -84,15 +84,6 @@ export interface SlideItem {
   layout: ImagePositionProp;
 }
 
-export interface IServiceCard {
-  id: number;
-  icon: IconProp;
-  slug: string;
-  titleService: string;
-  descriptionService: string;
-  features: IEspecialidad[];
-}
-
 export interface ITestimonialCard {
   id: number;
   title: string;
@@ -255,4 +246,12 @@ export interface IEspecialistaModal {
   specialist: IEspecialista | null;
   isOpen: boolean;
   onClose: () => void;
+}
+
+export interface IOrbitalesElement {
+  id: number;
+  label: string;
+  icon: IconProp;
+  color: string;
+  angle: number;
 }
