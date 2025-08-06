@@ -1,14 +1,31 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import { Card } from "@/components/ui/card";
-
 import { Title } from "@/components/shared/Title";
 
 import { OrbitalesElementsData } from "@/data";
+import { IWindowSize } from "@/interfaces";
 
 export function DiagramaSection() {
+  const [windowSize, setwindowSize] = useState<IWindowSize>({
+    innerHeight: 0,
+    innerWidth: 0,
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const windowData: IWindowSize = {
+        innerHeight: window.innerHeight || 0,
+        innerWidth: window.innerWidth || 0,
+      };
+
+      setwindowSize(windowData);
+    }
+  }, []);
+
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
@@ -25,12 +42,12 @@ export function DiagramaSection() {
                 key={i}
                 className="absolute w-1 h-1 bg-white/20 rounded-full"
                 initial={{
-                  x: Math.random() * window.innerWidth,
-                  y: Math.random() * window.innerHeight,
+                  x: Math.random() * windowSize.innerWidth,
+                  y: Math.random() * windowSize.innerHeight,
                 }}
                 animate={{
-                  x: Math.random() * window.innerWidth,
-                  y: Math.random() * window.innerHeight,
+                  x: Math.random() * windowSize.innerWidth,
+                  y: Math.random() * windowSize.innerHeight,
                 }}
                 transition={{
                   duration: Math.random() * 10 + 10,
