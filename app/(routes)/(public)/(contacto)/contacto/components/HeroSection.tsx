@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
+import { createWhatsappChatLink } from "@/utils/GlobalFunctions";
 import { MessageSquare, Phone } from "lucide-react";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -16,11 +19,20 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              variant="secondary"
-              className="animate-pulse cursor-pointer hover:animate-none"
+              variant="default"
+              className="cursor-pointer"
+              asChild
             >
-              <MessageSquare className="mr-2 h-5 w-5" />
-              Chat Directo
+              <Link
+                href={createWhatsappChatLink(
+                  NUMERO_WHATSAPP,
+                  WHATSAPP_MESSAGES.CONTACTO_CHAT_DIRECTO
+                )}
+                target="_blank"
+              >
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Chat Directo
+              </Link>
             </Button>
             <Button
               size="lg"

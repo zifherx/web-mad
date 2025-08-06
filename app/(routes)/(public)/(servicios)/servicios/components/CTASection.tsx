@@ -1,5 +1,6 @@
 import { BtnLargeWhatsApp } from "@/components/shared/BtnLargeWhatsApp";
 import { Button } from "@/components/ui/button";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,7 +26,11 @@ export function CTASection() {
               >
                 <Link href="/contacto">Solicitar Asesoría Gratuita</Link>
               </Button>
-              <BtnLargeWhatsApp celular="" mensaje="" text="Contáctanos" />
+              <BtnLargeWhatsApp
+                celular={NUMERO_WHATSAPP}
+                mensaje={WHATSAPP_MESSAGES.SERVICIOS_CONTACTANOS}
+                text="Contáctanos"
+              />
             </div>
           </div>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-2xl hidden md:block">

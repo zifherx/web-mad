@@ -43,6 +43,8 @@ import {
   LinkIcon,
   SlideItem,
 } from "@/interfaces";
+import { createWhatsappChatLink } from "@/utils/GlobalFunctions";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
 
 export const MenuFooterData: MenuFooterProp[] = [
   {
@@ -170,7 +172,10 @@ export const SocialButtonData: SocialButtonProp[] = [
   },
   {
     id: 5,
-    href: "https://wa.me/+51963454290?text=hola",
+    href: createWhatsappChatLink(
+      NUMERO_WHATSAPP,
+      WHATSAPP_MESSAGES.FOOTER_BOTON_WHATSAPP
+    ),
     iconName: FaWhatsapp,
     target: "_blank",
     srOnly: "Whatsapp",
