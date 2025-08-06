@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 import { BtnLargeWhatsApp } from "@/components/shared/BtnLargeWhatsApp";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
 
 export function CTASection() {
   return (
@@ -35,8 +36,10 @@ export function CTASection() {
               <Link href="/contacto">Solicitar Consultoría</Link>
             </Button>
             <BtnLargeWhatsApp
-              celular=""
-              mensaje=""
+              celular={NUMERO_WHATSAPP}
+              mensaje={
+                WHATSAPP_MESSAGES.NOSOTROS_ESPECIALISTAS_CONTACTAR_WHATSAPP
+              }
               text="Contactar por WhatsApp"
             />
           </div>

@@ -259,3 +259,8 @@ export interface IOrbitalesElement {
   color: string;
   angle: number;
 }
+
+export interface IWindowSize {
+  innerHeight: number;
+  innerWidth: number;
+}

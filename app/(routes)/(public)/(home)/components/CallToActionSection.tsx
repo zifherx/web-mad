@@ -16,7 +16,7 @@ export function CallToActionSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export function CallToActionSection() {
                 viewport={{ once: true }}
                 className="text-3xl md:text-5xl font-bold text-white leading-tight"
               >
-                Comienza tu Transformación Digital Hoy
+                Comienza la transformación de tu negocio hoy
               </motion.h2>
 
               <motion.p
