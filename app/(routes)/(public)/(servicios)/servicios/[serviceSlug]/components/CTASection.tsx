@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { BtnLargeWhatsApp } from "@/components/shared/BtnLargeWhatsApp";
 
 import { ServiceProp } from "@/types";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
 
 export function CTASection({ service }: ServiceProp) {
   const { menuTitle } = service;
@@ -33,8 +34,10 @@ export function CTASection({ service }: ServiceProp) {
               <Link href="/contacto">Solicitar Asesoría Gratuita</Link>
             </Button>
             <BtnLargeWhatsApp
-              celular=""
-              mensaje=""
+              celular={NUMERO_WHATSAPP}
+              mensaje={WHATSAPP_MESSAGES.SERVICIOS_CONTACTAR_WHATSAPP(
+                menuTitle
+              )}
               text="Contácanos por WhatsApp"
             />
           </div>
