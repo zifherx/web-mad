@@ -13,6 +13,7 @@ import { InfoItem } from "@/components/shared/InfoItem";
 
 import { InfoItemData } from "@/data";
 import { BtnLargeWhatsApp } from "@/components/shared/BtnLargeWhatsApp";
+import { NUMERO_WHATSAPP, WHATSAPP_MESSAGES } from "@/utils/Constants";
 
 export function InfoBlock() {
   return (
@@ -67,8 +68,8 @@ export function InfoBlock() {
           </p>
           <BtnLargeWhatsApp
             text="Chatea con nosotros"
-            celular="hola"
-            mensaje="hola"
+            celular={NUMERO_WHATSAPP}
+            mensaje={WHATSAPP_MESSAGES.CONTACTO_CHATEA_CON_NOSOTROS}
           />
         </CardContent>
       </Card>

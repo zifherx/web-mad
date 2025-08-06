@@ -178,3 +178,5 @@ export type NoResultsProps = INoResults;
 export type GridSpecialistProps = IGridSpecialist & INoResults;
 
 export type SpecialistModalProps = IEspecialistaModal;
+
+declare global {}
