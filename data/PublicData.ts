@@ -170,9 +170,7 @@ export const SocialButtonData: SocialButtonProp[] = [
     id: 1,
     href: "https://www.facebook.com/MarketerosAlMundo",
     iconName: FaFacebook,
-    iconName: FaFacebook,
     target: "_blank",
-    srOnly: "Facebook",
     srOnly: "Facebook",
   },
   {
@@ -195,16 +193,6 @@ export const SocialButtonData: SocialButtonProp[] = [
     iconName: AiOutlineYoutube,
     target: "_blank",
     srOnly: "Youtube",
-  },
-  {
-    id: 5,
-    href: createWhatsappChatLink(
-      NUMERO_WHATSAPP,
-      WHATSAPP_MESSAGES.FOOTER_BOTON_WHATSAPP
-    ),
-    iconName: FaWhatsapp,
-    target: "_blank",
-    srOnly: "Whatsapp",
   },
   {
     id: 5,
@@ -588,16 +576,6 @@ export const SociosEstrategicosData: ImageI[] = [
     id: 25,
     imageAlt: "Lety Mind",
     imageSource: "logo-letymind.png",
-  },
-  {
-    id: 26,
-    imageAlt: "SES",
-    imageSource: "logo-ses.png",
-  },
-  {
-    id: 27,
-    imageAlt: "El Tiburón Daniel",
-    imageSource: "logo-el-tiburon-negro.png",
   },
   {
     id: 26,
@@ -1974,7 +1952,6 @@ export const EspecialistasData: IEspecialista[] = [
     slug: "elkin-avendano",
     especialidad: "Marketing y Publicidad",
     pais: "Colombia",
-    pais: "Colombia",
     experiencia: "10+ años",
     imagen: "elkin-avendano.png",
     resena:
@@ -2867,6 +2844,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 0,
     icon: Users,
     color: "from-blue-500 to-blue-600",
+    description:
+      "Conocimiento profundo del cliente, segmentación precisa y experiencias personalizadas que generan conexión emocional.",
+    glowColor: "rgba(59, 130, 246, 0.6)",
   },
   {
     id: 2,
@@ -2874,6 +2854,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 72,
     icon: Target,
     color: "from-green-500 to-green-600",
+    description:
+      "Planificación estratégica basada en datos, objetivos claros y tácticas integradas para maximizar el ROI.",
+    glowColor: "rgba(34, 197, 94, 0.6)",
   },
   {
     id: 3,
@@ -2881,6 +2864,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 144,
     icon: Lightbulb,
     color: "from-yellow-500 to-yellow-600",
+    description:
+      "Adopción de tecnologías emergentes, creatividad disruptiva y soluciones que marcan la diferencia.",
+    glowColor: "rgba(234, 179, 8, 0.6)",
   },
   {
     id: 4,
@@ -2888,6 +2874,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 216,
     icon: Award,
     color: "from-purple-500 to-purple-600",
+    description:
+      "Métricas tangibles, análisis de performance y optimización continua para superar objetivos.",
+    glowColor: "rgba(147, 51, 234, 0.6)",
   },
   {
     id: 5,
@@ -2895,5 +2884,8 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 288,
     icon: Zap,
     color: "from-orange-500 to-orange-600",
+    description:
+      "Escalabilidad sostenible, expansión de mercado y aceleración del crecimiento empresarial.",
+    glowColor: "rgba(249, 115, 22, 0.6)",
   },
 ];
