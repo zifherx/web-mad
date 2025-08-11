@@ -95,7 +95,9 @@ export function HeroSection({ service }: ServiceProp) {
           >
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src={image || "https://placehold.co/800x600"}
+                src={
+                  `/images/servicios/${image}` || "https://placehold.co/800x600"
+                }
                 alt={service.title}
                 fill
                 className="object-cover"

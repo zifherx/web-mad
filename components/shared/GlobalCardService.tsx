@@ -60,7 +60,7 @@ export function GlobalCardService({ service }: ServiceProp) {
 
           <Button
             asChild
-            className="w-full group-hover:bg-redCustom group-hover:text-white transition-all duration-300"
+            className="w-full group-hover:bg-redCustom group-hover:text-white transition-all duration-300 hover:bg-redCustom hover:text-white"
             variant="outline"
           >
             <Link href={`/servicios/${slug}`}>

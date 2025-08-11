@@ -49,7 +49,7 @@ export function HistoriaSection() {
             className="relative h-[500px] overflow-hidden rounded-2xl shadow-2xl"
           >
             <Image
-              src="https://placehold.co/600x500"
+              src="/images/nosotros/quienes-somos.png"
               alt="Equipo de Marketing Al Día"
               fill
               className="object-cover"

@@ -61,11 +61,11 @@ export const MenuFooterData: MenuFooterProp[] = [
         titleOption: "Especialistas",
         linkOption: "/especialistas",
       },
-      {
-        id: 3,
-        titleOption: "Blog",
-        linkOption: "/blog",
-      },
+      // {
+      //   id: 3,
+      //   titleOption: "Blog",
+      //   linkOption: "/blog",
+      // },
       {
         id: 4,
         titleOption: "Contacto",
@@ -99,6 +99,30 @@ export const MenuFooterData: MenuFooterProp[] = [
       },
     ],
   },
+  // {
+  //   id: 3,
+  //   titleMenu: "Comunidad",
+  //   childrens: [
+  //     {
+  //       id: 1,
+  //       titleOption: "MAD News",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/mad-news",
+  //     },
+  //     {
+  //       id: 2,
+  //       titleOption: "Eventos",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/eventos",
+  //     },
+  //     {
+  //       id: 3,
+  //       titleOption: "Recursos",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/recursos",
+  //     },
+  //   ],
+  // },
   {
     id: 3,
     titleMenu: "Comunidad",
@@ -189,9 +213,9 @@ export const ToolbarHeaderData: LinkIcon[] = [
     text: "info@marketingaldia.net",
   },
   {
-    href: "tel:938163886",
+    href: "tel:+51963454290",
     icon: Phone,
-    text: "938 163 886",
+    text: "963 454 290",
   },
 ];
 
@@ -655,7 +679,7 @@ export const CatalogoServiciosData: IService[] = [
       },
       {
         id: 2,
-        feature: "Conferencias de impacto",
+        feature: "Customer Experience",
       },
       {
         id: 3,
@@ -663,7 +687,7 @@ export const CatalogoServiciosData: IService[] = [
       },
       {
         id: 4,
-        feature: "Análisis competitivo",
+        feature: "Conferencias de impacto",
       },
     ],
     benefits: [
@@ -759,7 +783,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Monitoreo de resultados y ajustes estratégicos",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "marketing-estrategico.png",
     icon: BarChart3,
   },
   {
@@ -790,7 +814,6 @@ export const CatalogoServiciosData: IService[] = [
         feature: "Plan accionable",
       },
     ],
-
     benefits: [
       {
         id: 1,
@@ -882,7 +905,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Ejecución del plan con KPIs y métricas de seguimiento",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "desarrollo-planes-marketing-estrategico.png",
     icon: Target,
   },
   {
@@ -1004,7 +1027,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Implementación de estrategias de crecimiento",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "desarrollo-ejecucion-modelos-negocio.png",
     icon: Lightbulb,
   },
   {
@@ -1127,7 +1150,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Despliegue y monitoreo de métricas CX",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "customer-experience-management.png",
     icon: Users,
   },
   {
@@ -1249,7 +1272,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Seguimiento y materiales complementarios",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "conferencias-alto-impacto.png",
     icon: Presentation,
   },
   {
@@ -1371,7 +1394,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Seguimiento y materiales complementarios",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "desarrollo-web-y-comercio-electronico.png",
     icon: Globe,
   },
   {
@@ -1493,7 +1516,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Acompañamiento post-capacitación",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "cursos-capacitacion-empresarial.png",
     icon: BookOpen,
   },
   {
@@ -1615,7 +1638,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Lanzamiento y optimización continua",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "publicidad-estrategica.png",
     icon: Target,
   },
   {
@@ -1737,7 +1760,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Training y acompañamiento en la adopción",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "transformacion-digital.png",
     icon: Rocket,
   },
   {
@@ -1748,12 +1771,118 @@ export const CatalogoServiciosData: IService[] = [
     menuDescription: "Contenido que conecta",
     shortDescription:
       "El contenido es el rey, pero la forma en que lo presentas es la reina. Creamos audiovisuales que cuentan historias y conectan.",
-    longDescription: "",
-    features: [],
-    benefits: [],
-    targetAudience: [],
-    process: [],
-    image: "https://placehold.co/500x300",
+    longDescription:
+      "Creamos contenido audiovisual estratégico que conecta con tu audiencia y potencia tu presencia digital. Desde producción de video corporativo hasta gestión integral de redes sociales, desarrollamos piezas que comunican tu mensaje de manera efectiva y memorable. Nuestro enfoque combina creatividad, estrategia y tecnología para generar contenido que no solo se ve bien, sino que logra resultados medibles.",
+    features: [
+      {
+        id: 1,
+        feature: "Producción audiovisual",
+      },
+      {
+        id: 2,
+        feature: "Gestión de redes sociales",
+      },
+      {
+        id: 3,
+        feature: "Storytelling visual",
+      },
+      {
+        id: 4,
+        feature: "Marketing de contenidos",
+      },
+    ],
+    benefits: [
+      {
+        id: 1,
+        benefit: "Mayor engagement digital",
+        description:
+          "El contenido audiovisual genera hasta 10 veces más interacción que el texto plano en redes sociales.",
+      },
+      {
+        id: 2,
+        benefit: "Fortalecimiento de marca",
+        description:
+          "Desarrollamos una identidad visual consistente que refuerza el reconocimiento y posicionamiento de tu marca.",
+      },
+      {
+        id: 3,
+        benefit: "Alcance amplificado",
+        description:
+          "El contenido de calidad se comparte orgánicamente, multiplicando tu alcance sin costos adicionales.",
+      },
+      {
+        id: 4,
+        benefit: "Conexión emocional",
+        description:
+          "Los audiovisuales generan vínculos emocionales más fuertes con tu audiencia que otros formatos.",
+      },
+      {
+        id: 5,
+        benefit: "Mejor conversión",
+        description:
+          "El video marketing puede incrementar las tasas de conversión hasta en un 80% comparado con otros medios.",
+      },
+      {
+        id: 6,
+        benefit: "Presencia profesional",
+        description:
+          "Contenido de alta calidad posiciona tu marca como profesional y confiable en el mercado.",
+      },
+    ],
+    targetAudience: [
+      {
+        id: 1,
+        target: "Empresas B2B",
+      },
+      {
+        id: 2,
+        target: "Marcas de consumo",
+      },
+      {
+        id: 3,
+        target: "Startups emergentes",
+      },
+      {
+        id: 4,
+        target: "Influencers y creadores",
+      },
+      {
+        id: 5,
+        target: "Instituciones educativas",
+      },
+      {
+        id: 6,
+        target: "Organizaciones sin fines de lucro",
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Estrategia de Contenido",
+        description: "Definición de objetivos, audiencia y línea editorial",
+      },
+      {
+        step: 2,
+        title: "Preproducción",
+        description: "Guionización, storyboard y planificación de rodaje",
+      },
+      {
+        step: 3,
+        title: "Producción Audiovisual",
+        description: "Grabación, fotografía y captura de contenido",
+      },
+      {
+        step: 4,
+        title: "Postproducción",
+        description: "Edición, color grading, motion graphics y sonorización",
+      },
+      {
+        step: 5,
+        title: "Distribución y Gestión",
+        description: "Publicación estratégica y gestión de comunidades",
+      },
+    ],
+    image: "audiovisuales-social-media.png",
     icon: Video,
   },
 ];
@@ -2078,6 +2207,126 @@ export const EspecialistasData: IEspecialista[] = [
       {
         id: 4,
         logro: "Certificado en Microsoft Most Valuable Professional",
+      },
+    ],
+  },
+  {
+    id: 7,
+    nombre: "Daniel Iriarte",
+    slug: "daniel-iriarte",
+    especialidad: "Ventas y Liderazgo Comercial",
+    pais: "Estados Unidos",
+    experiencia: "15+ años",
+    imagen: "daniel-iriarte.png",
+    resena:
+      "Conocido como 'El Tiburón de las Ventas', es la figura más influyente en formación de ventas del continente. Creador del único método especializado en Closer de Ventas High Ticket para productos de alto valor.",
+    especialidades: [
+      { id: 1, nombre: "Ventas High Ticket" },
+      { id: 2, nombre: "Liderazgo Comercial" },
+      { id: 3, nombre: "Formación en Ventas" },
+      { id: 4, nombre: "Estrategias Comerciales" },
+    ],
+    rating: 4.9,
+    proyectos: 700,
+    color: "from-red-500 to-orange-500",
+    descripcionCompleta:
+      "CEO y Director de SES La Escuela Corp de Ventas para Latam, Presidente de la Academia Corp de Ventas de Estados Unidos, y Co-Fundador de la Asociación Internacional de Ventas. Con más de 100,000 personas capacitadas y más de 500,000 asistentes a sus eventos, Daniel ha transformado la manera de vender en cientos de organizaciones a través de su metodología única aplicada en más de 12 países.",
+    logros: [
+      {
+        id: 1,
+        logro: "Capacitó a más de 100,000 personas en ventas",
+      },
+      {
+        id: 2,
+        logro: "Más de 500,000 asistentes a sus eventos",
+      },
+      {
+        id: 3,
+        logro: "Creador del evento 'Nadando con Tiburones NCT'",
+      },
+      {
+        id: 4,
+        logro: "Más de 5,000 conferencias y 700 operaciones corporativas",
+      },
+    ],
+  },
+  {
+    id: 8,
+    nombre: "Andy Erazo",
+    slug: "andy-erazo",
+    especialidad: "Growth Marketing y Emprendimiento",
+    pais: "Perú",
+    experiencia: "6+ años",
+    imagen: "andy-erazo.png",
+    resena:
+      "CEO & Founder de LetyMind, startup que revoluciona la contratación de creativos. Growth Advisor, mentor y columnista especializado en marketing digital y contenidos que conectan de verdad.",
+    especialidades: [
+      { id: 1, nombre: "Growth Marketing" },
+      { id: 2, nombre: "Marketing Digital" },
+      { id: 3, nombre: "Branding" },
+      { id: 4, nombre: "Desarrollo de Negocios" },
+    ],
+    rating: 4.8,
+    proyectos: 85,
+    color: "from-green-500 to-emerald-500",
+    descripcionCompleta:
+      "Comunicador publicitario y emprendedor con formación en Diseño Publicitario (IDC) y Comunicación y Publicidad (UPN). Growth Advisor en CIDE PUCP, Mentor en Seedstars y Columnista en Mercado Negro. Especialista en transformar organizaciones a través de contenidos digitales y estrategias de marketing que conectan auténticamente con las audiencias, combinando creatividad con datos para generar resultados reales.",
+    logros: [
+      {
+        id: 1,
+        logro: "CEO & Fundador de LetyMind startup",
+      },
+      {
+        id: 2,
+        logro: "Growth Content Lead en Manzana Verde",
+      },
+      {
+        id: 3,
+        logro: "Creador de curso 'Emprendimiento en Wellness' en Crehana",
+      },
+      {
+        id: 4,
+        logro: "Mentor certificado por Embajada de India y Hero Startup",
+      },
+    ],
+  },
+  {
+    id: 9,
+    nombre: "Mauricio Ruiz Sandoval",
+    slug: "mauricio-ruiz",
+    especialidad: "Consultoría Empresarial y Gerencia Estratégica",
+    pais: "Colombia",
+    experiencia: "20+ años",
+    imagen: "mauricio-ruiz.png",
+    resena:
+      "Empresario y consultor empresarial internacional con veinte años de experiencia en gerencia general. Especialista en desarrollo integral de proyectos y planeación estratégica que transforma organizaciones.",
+    especialidades: [
+      { id: 1, nombre: "Gerencia de Mercadeo" },
+      { id: 2, nombre: "Planeación Estratégica" },
+      { id: 3, nombre: "Gerencia de Proyectos" },
+      { id: 4, nombre: "Formación de Líderes" },
+    ],
+    rating: 4.8,
+    proyectos: 250,
+    color: "from-amber-500 to-yellow-500",
+    descripcionCompleta:
+      "Magister en Gerencia de Mercadeo y especialista en gerencia de proyectos con veinte años de experiencia ejecutiva en Gerencia General, Administrativa y Comercial. Desarrollador integral de proyectos y experto en planeación estratégica con énfasis en análisis de entorno, formulación, desarrollo, montaje y puesta en marcha de planes de negocios. Su expertise abarca estructura comercial, financiera, legal y capacitación empresarial.",
+    logros: [
+      {
+        id: 1,
+        logro: "20 años de experiencia en gerencia general exitosa",
+      },
+      {
+        id: 2,
+        logro: "Especialista certificado en gerencia de proyectos",
+      },
+      {
+        id: 3,
+        logro: "Magister en Gerencia de Mercadeo",
+      },
+      {
+        id: 4,
+        logro: "Consultor internacional en múltiples países",
       },
     ],
   },
@@ -2595,6 +2844,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 0,
     icon: Users,
     color: "from-blue-500 to-blue-600",
+    description:
+      "Conocimiento profundo del cliente, segmentación precisa y experiencias personalizadas que generan conexión emocional.",
+    glowColor: "rgba(59, 130, 246, 0.6)",
   },
   {
     id: 2,
@@ -2602,6 +2854,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 72,
     icon: Target,
     color: "from-green-500 to-green-600",
+    description:
+      "Planificación estratégica basada en datos, objetivos claros y tácticas integradas para maximizar el ROI.",
+    glowColor: "rgba(34, 197, 94, 0.6)",
   },
   {
     id: 3,
@@ -2609,6 +2864,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 144,
     icon: Lightbulb,
     color: "from-yellow-500 to-yellow-600",
+    description:
+      "Adopción de tecnologías emergentes, creatividad disruptiva y soluciones que marcan la diferencia.",
+    glowColor: "rgba(234, 179, 8, 0.6)",
   },
   {
     id: 4,
@@ -2616,6 +2874,9 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 216,
     icon: Award,
     color: "from-purple-500 to-purple-600",
+    description:
+      "Métricas tangibles, análisis de performance y optimización continua para superar objetivos.",
+    glowColor: "rgba(147, 51, 234, 0.6)",
   },
   {
     id: 5,
@@ -2623,5 +2884,8 @@ export const OrbitalesElementsData: IOrbitalesElement[] = [
     angle: 288,
     icon: Zap,
     color: "from-orange-500 to-orange-600",
+    description:
+      "Escalabilidad sostenible, expansión de mercado y aceleración del crecimiento empresarial.",
+    glowColor: "rgba(249, 115, 22, 0.6)",
   },
 ];
