@@ -44,7 +44,7 @@ export function QuienesSomosSection() {
           </div>
           <div className="relative h-[400px] overflow-hidden rounded-lg">
             <Image
-              src="https://placehold.co/600x400"
+              src="/images/portadas/quienes-somos.png"
               alt="Equipo de Marketing Al Día"
               fill
               className="object-cover"

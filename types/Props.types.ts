@@ -180,3 +180,12 @@ export type GridSpecialistProps = IGridSpecialist & INoResults;
 export type SpecialistModalProps = IEspecialistaModal;
 
 declare global {}
+
+export type MobileMenuType = {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+  handleLinkClick: () => void;
+  openSubmenu: string | null;
+  setOpenSubmenu: Dispatch<SetStateAction<string | null>>;
+  toggleSubmenu: (menu: string) => void;
+};
