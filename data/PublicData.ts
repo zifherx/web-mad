@@ -61,11 +61,11 @@ export const MenuFooterData: MenuFooterProp[] = [
         titleOption: "Especialistas",
         linkOption: "/especialistas",
       },
-      {
-        id: 3,
-        titleOption: "Blog",
-        linkOption: "/blog",
-      },
+      // {
+      //   id: 3,
+      //   titleOption: "Blog",
+      //   linkOption: "/blog",
+      // },
       {
         id: 4,
         titleOption: "Contacto",
@@ -99,30 +99,30 @@ export const MenuFooterData: MenuFooterProp[] = [
       },
     ],
   },
-  {
-    id: 3,
-    titleMenu: "Comunidad",
-    childrens: [
-      {
-        id: 1,
-        titleOption: "MAD News",
-        linkOption: "#",
-        // linkOption: "/comunidad/mad-news",
-      },
-      {
-        id: 2,
-        titleOption: "Eventos",
-        linkOption: "#",
-        // linkOption: "/comunidad/eventos",
-      },
-      {
-        id: 3,
-        titleOption: "Recursos",
-        linkOption: "#",
-        // linkOption: "/comunidad/recursos",
-      },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   titleMenu: "Comunidad",
+  //   childrens: [
+  //     {
+  //       id: 1,
+  //       titleOption: "MAD News",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/mad-news",
+  //     },
+  //     {
+  //       id: 2,
+  //       titleOption: "Eventos",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/eventos",
+  //     },
+  //     {
+  //       id: 3,
+  //       titleOption: "Recursos",
+  //       linkOption: "#",
+  //       // linkOption: "/comunidad/recursos",
+  //     },
+  //   ],
+  // },
   {
     id: 4,
     titleMenu: "Legal",
@@ -189,9 +189,9 @@ export const ToolbarHeaderData: LinkIcon[] = [
     text: "info@marketingaldia.net",
   },
   {
-    href: "tel:938163886",
+    href: "tel:+51963454290",
     icon: Phone,
-    text: "938 163 886",
+    text: "963 454 290",
   },
 ];
 
@@ -655,7 +655,7 @@ export const CatalogoServiciosData: IService[] = [
       },
       {
         id: 2,
-        feature: "Conferencias de impacto",
+        feature: "Customer Experience",
       },
       {
         id: 3,
@@ -663,7 +663,7 @@ export const CatalogoServiciosData: IService[] = [
       },
       {
         id: 4,
-        feature: "Análisis competitivo",
+        feature: "Conferencias de impacto",
       },
     ],
     benefits: [
@@ -759,7 +759,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Monitoreo de resultados y ajustes estratégicos",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "marketing-estrategico.png",
     icon: BarChart3,
   },
   {
@@ -790,7 +790,6 @@ export const CatalogoServiciosData: IService[] = [
         feature: "Plan accionable",
       },
     ],
-
     benefits: [
       {
         id: 1,
@@ -882,7 +881,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Ejecución del plan con KPIs y métricas de seguimiento",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "desarrollo-planes-marketing-estrategico.png",
     icon: Target,
   },
   {
@@ -1004,7 +1003,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Implementación de estrategias de crecimiento",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "desarrollo-ejecucion-modelos-negocio.png",
     icon: Lightbulb,
   },
   {
@@ -1127,7 +1126,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Despliegue y monitoreo de métricas CX",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "customer-experience-management.png",
     icon: Users,
   },
   {
@@ -1249,7 +1248,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Seguimiento y materiales complementarios",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "conferencias-alto-impacto.png",
     icon: Presentation,
   },
   {
@@ -1371,7 +1370,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Seguimiento y materiales complementarios",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "desarrollo-web-y-comercio-electronico.png",
     icon: Globe,
   },
   {
@@ -1493,7 +1492,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Acompañamiento post-capacitación",
       },
     ],
-    image: "https://placehold.co/800x600",
+    image: "cursos-capacitacion-empresarial.png",
     icon: BookOpen,
   },
   {
@@ -1615,7 +1614,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Lanzamiento y optimización continua",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "publicidad-estrategica.png",
     icon: Target,
   },
   {
@@ -1737,7 +1736,7 @@ export const CatalogoServiciosData: IService[] = [
         description: "Training y acompañamiento en la adopción",
       },
     ],
-    image: "https://placehold.co/500x300",
+    image: "transformacion-digital.png",
     icon: Rocket,
   },
   {
@@ -1748,12 +1747,118 @@ export const CatalogoServiciosData: IService[] = [
     menuDescription: "Contenido que conecta",
     shortDescription:
       "El contenido es el rey, pero la forma en que lo presentas es la reina. Creamos audiovisuales que cuentan historias y conectan.",
-    longDescription: "",
-    features: [],
-    benefits: [],
-    targetAudience: [],
-    process: [],
-    image: "https://placehold.co/500x300",
+    longDescription:
+      "Creamos contenido audiovisual estratégico que conecta con tu audiencia y potencia tu presencia digital. Desde producción de video corporativo hasta gestión integral de redes sociales, desarrollamos piezas que comunican tu mensaje de manera efectiva y memorable. Nuestro enfoque combina creatividad, estrategia y tecnología para generar contenido que no solo se ve bien, sino que logra resultados medibles.",
+    features: [
+      {
+        id: 1,
+        feature: "Producción audiovisual",
+      },
+      {
+        id: 2,
+        feature: "Gestión de redes sociales",
+      },
+      {
+        id: 3,
+        feature: "Storytelling visual",
+      },
+      {
+        id: 4,
+        feature: "Marketing de contenidos",
+      },
+    ],
+    benefits: [
+      {
+        id: 1,
+        benefit: "Mayor engagement digital",
+        description:
+          "El contenido audiovisual genera hasta 10 veces más interacción que el texto plano en redes sociales.",
+      },
+      {
+        id: 2,
+        benefit: "Fortalecimiento de marca",
+        description:
+          "Desarrollamos una identidad visual consistente que refuerza el reconocimiento y posicionamiento de tu marca.",
+      },
+      {
+        id: 3,
+        benefit: "Alcance amplificado",
+        description:
+          "El contenido de calidad se comparte orgánicamente, multiplicando tu alcance sin costos adicionales.",
+      },
+      {
+        id: 4,
+        benefit: "Conexión emocional",
+        description:
+          "Los audiovisuales generan vínculos emocionales más fuertes con tu audiencia que otros formatos.",
+      },
+      {
+        id: 5,
+        benefit: "Mejor conversión",
+        description:
+          "El video marketing puede incrementar las tasas de conversión hasta en un 80% comparado con otros medios.",
+      },
+      {
+        id: 6,
+        benefit: "Presencia profesional",
+        description:
+          "Contenido de alta calidad posiciona tu marca como profesional y confiable en el mercado.",
+      },
+    ],
+    targetAudience: [
+      {
+        id: 1,
+        target: "Empresas B2B",
+      },
+      {
+        id: 2,
+        target: "Marcas de consumo",
+      },
+      {
+        id: 3,
+        target: "Startups emergentes",
+      },
+      {
+        id: 4,
+        target: "Influencers y creadores",
+      },
+      {
+        id: 5,
+        target: "Instituciones educativas",
+      },
+      {
+        id: 6,
+        target: "Organizaciones sin fines de lucro",
+      },
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Estrategia de Contenido",
+        description: "Definición de objetivos, audiencia y línea editorial",
+      },
+      {
+        step: 2,
+        title: "Preproducción",
+        description: "Guionización, storyboard y planificación de rodaje",
+      },
+      {
+        step: 3,
+        title: "Producción Audiovisual",
+        description: "Grabación, fotografía y captura de contenido",
+      },
+      {
+        step: 4,
+        title: "Postproducción",
+        description: "Edición, color grading, motion graphics y sonorización",
+      },
+      {
+        step: 5,
+        title: "Distribución y Gestión",
+        description: "Publicación estratégica y gestión de comunidades",
+      },
+    ],
+    image: "audiovisuales-social-media.png",
     icon: Video,
   },
 ];

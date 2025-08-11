@@ -92,7 +92,7 @@ export function MenuDesktop() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-transparent font-semibold text-lg hover:bg-transparent hover:text-redCustom/80">
             Comunidad
           </NavigationMenuTrigger>
@@ -106,7 +106,7 @@ export function MenuDesktop() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
