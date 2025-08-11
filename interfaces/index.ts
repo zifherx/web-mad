@@ -258,6 +258,8 @@ export interface IOrbitalesElement {
   icon: IconProp;
   color: string;
   angle: number;
+  description: string;
+  glowColor: string;
 }
 
 export interface IWindowSize {
