@@ -2439,6 +2439,126 @@ export const EspecialistasData: IEspecialista[] = [
       },
     ],
   },
+  {
+    id: 7,
+    nombre: "Daniel Iriarte",
+    slug: "daniel-iriarte",
+    especialidad: "Ventas y Liderazgo Comercial",
+    pais: "Estados Unidos",
+    experiencia: "15+ años",
+    imagen: "daniel-iriarte.png",
+    resena:
+      "Conocido como 'El Tiburón de las Ventas', es la figura más influyente en formación de ventas del continente. Creador del único método especializado en Closer de Ventas High Ticket para productos de alto valor.",
+    especialidades: [
+      { id: 1, nombre: "Ventas High Ticket" },
+      { id: 2, nombre: "Liderazgo Comercial" },
+      { id: 3, nombre: "Formación en Ventas" },
+      { id: 4, nombre: "Estrategias Comerciales" },
+    ],
+    rating: 4.9,
+    proyectos: 700,
+    color: "from-red-500 to-orange-500",
+    descripcionCompleta:
+      "CEO y Director de SES La Escuela Corp de Ventas para Latam, Presidente de la Academia Corp de Ventas de Estados Unidos, y Co-Fundador de la Asociación Internacional de Ventas. Con más de 100,000 personas capacitadas y más de 500,000 asistentes a sus eventos, Daniel ha transformado la manera de vender en cientos de organizaciones a través de su metodología única aplicada en más de 12 países.",
+    logros: [
+      {
+        id: 1,
+        logro: "Capacitó a más de 100,000 personas en ventas",
+      },
+      {
+        id: 2,
+        logro: "Más de 500,000 asistentes a sus eventos",
+      },
+      {
+        id: 3,
+        logro: "Creador del evento 'Nadando con Tiburones NCT'",
+      },
+      {
+        id: 4,
+        logro: "Más de 5,000 conferencias y 700 operaciones corporativas",
+      },
+    ],
+  },
+  {
+    id: 8,
+    nombre: "Andy Erazo",
+    slug: "andy-erazo",
+    especialidad: "Growth Marketing y Emprendimiento",
+    pais: "Perú",
+    experiencia: "6+ años",
+    imagen: "andy-erazo.png",
+    resena:
+      "CEO & Founder de LetyMind, startup que revoluciona la contratación de creativos. Growth Advisor, mentor y columnista especializado en marketing digital y contenidos que conectan de verdad.",
+    especialidades: [
+      { id: 1, nombre: "Growth Marketing" },
+      { id: 2, nombre: "Marketing Digital" },
+      { id: 3, nombre: "Branding" },
+      { id: 4, nombre: "Desarrollo de Negocios" },
+    ],
+    rating: 4.8,
+    proyectos: 85,
+    color: "from-green-500 to-emerald-500",
+    descripcionCompleta:
+      "Comunicador publicitario y emprendedor con formación en Diseño Publicitario (IDC) y Comunicación y Publicidad (UPN). Growth Advisor en CIDE PUCP, Mentor en Seedstars y Columnista en Mercado Negro. Especialista en transformar organizaciones a través de contenidos digitales y estrategias de marketing que conectan auténticamente con las audiencias, combinando creatividad con datos para generar resultados reales.",
+    logros: [
+      {
+        id: 1,
+        logro: "CEO & Fundador de LetyMind startup",
+      },
+      {
+        id: 2,
+        logro: "Growth Content Lead en Manzana Verde",
+      },
+      {
+        id: 3,
+        logro: "Creador de curso 'Emprendimiento en Wellness' en Crehana",
+      },
+      {
+        id: 4,
+        logro: "Mentor certificado por Embajada de India y Hero Startup",
+      },
+    ],
+  },
+  {
+    id: 9,
+    nombre: "Mauricio Ruiz Sandoval",
+    slug: "mauricio-ruiz",
+    especialidad: "Consultoría Empresarial y Gerencia Estratégica",
+    pais: "Colombia",
+    experiencia: "20+ años",
+    imagen: "mauricio-ruiz.png",
+    resena:
+      "Empresario y consultor empresarial internacional con veinte años de experiencia en gerencia general. Especialista en desarrollo integral de proyectos y planeación estratégica que transforma organizaciones.",
+    especialidades: [
+      { id: 1, nombre: "Gerencia de Mercadeo" },
+      { id: 2, nombre: "Planeación Estratégica" },
+      { id: 3, nombre: "Gerencia de Proyectos" },
+      { id: 4, nombre: "Formación de Líderes" },
+    ],
+    rating: 4.8,
+    proyectos: 250,
+    color: "from-amber-500 to-yellow-500",
+    descripcionCompleta:
+      "Magister en Gerencia de Mercadeo y especialista en gerencia de proyectos con veinte años de experiencia ejecutiva en Gerencia General, Administrativa y Comercial. Desarrollador integral de proyectos y experto en planeación estratégica con énfasis en análisis de entorno, formulación, desarrollo, montaje y puesta en marcha de planes de negocios. Su expertise abarca estructura comercial, financiera, legal y capacitación empresarial.",
+    logros: [
+      {
+        id: 1,
+        logro: "20 años de experiencia en gerencia general exitosa",
+      },
+      {
+        id: 2,
+        logro: "Especialista certificado en gerencia de proyectos",
+      },
+      {
+        id: 3,
+        logro: "Magister en Gerencia de Mercadeo",
+      },
+      {
+        id: 4,
+        logro: "Consultor internacional en múltiples países",
+      },
+    ],
+  },
 ];
 
 export const PoliticaPrivacidadData: ILegal[] = [
