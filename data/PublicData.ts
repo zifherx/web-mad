@@ -54,12 +54,12 @@ export const MenuFooterData: MenuFooterProp[] = [
       {
         id: 1,
         titleOption: "Quienes Somos",
-        linkOption: "/quienes-somos",
+        linkOption: "/nosotros/quienes-somos",
       },
       {
         id: 2,
         titleOption: "Especialistas",
-        linkOption: "/especialistas",
+        linkOption: "/nosotros/especialistas",
       },
       // {
       //   id: 3,
@@ -123,30 +123,6 @@ export const MenuFooterData: MenuFooterProp[] = [
   //     },
   //   ],
   // },
-  {
-    id: 3,
-    titleMenu: "Comunidad",
-    childrens: [
-      {
-        id: 1,
-        titleOption: "MAD News",
-        linkOption: "#",
-        // linkOption: "/comunidad/mad-news",
-      },
-      {
-        id: 2,
-        titleOption: "Eventos",
-        linkOption: "#",
-        // linkOption: "/comunidad/eventos",
-      },
-      {
-        id: 3,
-        titleOption: "Recursos",
-        linkOption: "#",
-        // linkOption: "/comunidad/recursos",
-      },
-    ],
-  },
   {
     id: 4,
     titleMenu: "Legal",
@@ -402,10 +378,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
     id: 1,
     title: "María González",
     position: "CEO, Empresa Innovadora",
-    // imageSource: "https://placeholder.svg?height=100&width=100",
     imageSource: "https://github.com/shadcn.png",
-    // imageSource: "https://placeholder.svg?height=100&width=100",
-    // imageSource: "https://placeholder.svg?height=100&width=100",
     quote:
       "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
   },
@@ -448,6 +421,22 @@ export const TestimonialCardData: ITestimonialCard[] = [
     imageSource: "https://github.com/leerob.png",
     quote:
       "El desarrollo web que realizaron para nosotros superó todas las expectativas. Profesionales, creativos y orientados a resultados.",
+  },
+  {
+    id: 7,
+    title: "Carlos Escala",
+    position: "CEO, EK Consulting Group",
+    imageSource: "https://github.com/shadcn.png",
+    quote:
+      "En un mundo tan cambiante y acelerado es importante seguir plataformas como esta que entrevistan a profesionales top.",
+  },
+  {
+    id: 8,
+    title: "Raúl Vergara",
+    position: "Gerente General,Footloose",
+    imageSource: "https://github.com/leerob.png",
+    quote:
+      "Marketing Al Día es un espacio increíblemente valioso para profesionales y emprendedores que buscan mantenerse actualizados.",
   },
 ];
 
