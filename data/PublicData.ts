@@ -376,16 +376,38 @@ export const SlidesHeroData: SlideItem[] = [
 export const TestimonialCardData: ITestimonialCard[] = [
   {
     id: 1,
-    title: "María González",
-    position: "CEO, Empresa Innovadora",
-    imageSource: "https://github.com/shadcn.png",
-    // imageSource: "https://placeholder.svg?height=100&width=100",
-    // imageSource: "https://placeholder.svg?height=100&width=100",
+    title: "Carlos Escala",
+    position: "CEO, EK Consulting Group",
+    imageSource: "/images/testimonios/carlos-escala.png",
+    quote:
+      "En un mundo tan cambiante y acelerado es importante seguir plataformas como esta que entrevistan a profesionales top.",
+  },
+  {
+    id: 2,
+    title: "Raúl Vergara",
+    position: "Gerente General,Footloose",
+    imageSource: "/images/testimonios/raul-vergara.png",
+    quote:
+      "Marketing Al Día es un espacio increíblemente valioso para profesionales y emprendedores que buscan mantenerse actualizados.",
+  },
+  {
+    id: 3,
+    title: "Alejandro Penagos",
+    position: "CEO,VCC Tecnología",
+    imageSource: "/images/testimonios/alejandro-penagos.png",
+    quote:
+      "Este espacio nos permitió conversar sobre innovación y mostrar el valor que la tecnología aporta para crear experiencias memorables",
+  },
+  {
+    id: 4,
+    title: "Marco Vives",
+    position: "Gerente General, Markethink Group",
+    imageSource: "/images/testimonios/marco-vives.png",
     quote:
       "Marketing Al Día transformó completamente nuestra estrategia digital. Los resultados han sido excepcionales, superando todas nuestras expectativas.",
   },
   {
-    id: 2,
+    id: 5,
     title: "Carlos Rodríguez",
     position: "Director de Marketing, Corporación Global",
     imageSource: "https://github.com/leerob.png",
@@ -393,7 +415,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
       "Su enfoque estratégico y conocimiento del mercado nos ayudó a posicionarnos como líderes en nuestro sector. Altamente recomendados.",
   },
   {
-    id: 3,
+    id: 6,
     title: "Laura Martínez",
     position: "Fundadora, Startup Tecnológica",
     imageSource: "https://github.com/shadcn.png",
@@ -401,7 +423,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
       "El programa de aceleramiento empresarial fue clave para el crecimiento de nuestra startup. Su equipo es profesional y comprometido con los resultados.",
   },
   {
-    id: 4,
+    id: 7,
     title: "Roberto Silva",
     position: "Gerente General, Retail Corp",
     imageSource: "https://github.com/leerob.png",
@@ -409,7 +431,7 @@ export const TestimonialCardData: ITestimonialCard[] = [
       "La consultoría en Customer Experience transformó la forma en que interactuamos con nuestros clientes. Increíble retorno de inversión.",
   },
   {
-    id: 5,
+    id: 8,
     title: "Ana Fernández",
     position: "Directora de Ventas, Tech Solutions",
     imageSource: "https://github.com/shadcn.png",
@@ -417,28 +439,12 @@ export const TestimonialCardData: ITestimonialCard[] = [
       "Las conferencias de Marketing Al Día son de altísima calidad. Contenido práctico y aplicable inmediatamente en nuestros procesos.",
   },
   {
-    id: 6,
+    id: 9,
     title: "Diego Morales",
     position: "Fundador, E-commerce Plus",
     imageSource: "https://github.com/leerob.png",
     quote:
       "El desarrollo web que realizaron para nosotros superó todas las expectativas. Profesionales, creativos y orientados a resultados.",
-  },
-  {
-    id: 7,
-    title: "Carlos Escala",
-    position: "CEO, EK Consulting Group",
-    imageSource: "https://github.com/shadcn.png",
-    quote:
-      "En un mundo tan cambiante y acelerado es importante seguir plataformas como esta que entrevistan a profesionales top.",
-  },
-  {
-    id: 8,
-    title: "Raúl Vergara",
-    position: "Gerente General,Footloose",
-    imageSource: "https://github.com/leerob.png",
-    quote:
-      "Marketing Al Día es un espacio increíblemente valioso para profesionales y emprendedores que buscan mantenerse actualizados.",
   },
 ];
 
