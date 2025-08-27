@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { Quote } from "lucide-react";
 
 import { TestimonialCardProp } from "@/types";

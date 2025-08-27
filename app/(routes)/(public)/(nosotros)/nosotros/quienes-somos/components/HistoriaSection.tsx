@@ -52,7 +52,7 @@ export function HistoriaSection() {
               src="/images/nosotros/quienes-somos.png"
               alt="Equipo de Marketing Al Día"
               fill
-              className="object-cover"
+              className="object-contain md:object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
           </motion.div>

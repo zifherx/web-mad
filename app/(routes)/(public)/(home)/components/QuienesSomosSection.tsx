@@ -47,7 +47,7 @@ export function QuienesSomosSection() {
               src="/images/portadas/quienes-somos.png"
               alt="Equipo de Marketing Al Día"
               fill
-              className="object-cover"
+              className="object-contain md:object-cover"
             />
           </div>
         </div>
