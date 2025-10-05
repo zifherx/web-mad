@@ -1,4 +1,9 @@
-import { Dispatch, HTMLAttributeAnchorTarget, SetStateAction } from "react";
+import {
+  Dispatch,
+  HTMLAttributeAnchorTarget,
+  ReactNode,
+  SetStateAction,
+} from "react";
 import { LucideIcon } from "lucide-react";
 import { IconType } from "react-icons";
 
@@ -24,6 +29,10 @@ import {
   SlideItem,
   SubmenuFooter,
 } from "@/interfaces";
+
+export type REACT_CHILDREN_TYPE = {
+  children: ReactNode;
+};
 
 export type LinkHrefProp = {
   text: string;
