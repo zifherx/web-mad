@@ -10,6 +10,7 @@ import { IconType } from "react-icons";
 import {
   CarouselBannerItem,
   ICardCounter,
+  ICMS_USER,
   IEspecialidad,
   IEspecialista,
   IEspecialistaModal,
@@ -19,6 +20,7 @@ import {
   IHeroSpecialist,
   ILegal,
   ImageI,
+  IMenuSidebar,
   InfoItem,
   INoResults,
   IProtectionNotice,
@@ -29,6 +31,7 @@ import {
   SlideItem,
   SubmenuFooter,
 } from "@/interfaces";
+import { CurrentServerUser } from "@stackframe/stack";
 
 export type REACT_CHILDREN_TYPE = {
   children: ReactNode;
@@ -197,4 +200,16 @@ export type MobileMenuType = {
   openSubmenu: string | null;
   setOpenSubmenu: Dispatch<SetStateAction<string | null>>;
   toggleSubmenu: (menu: string) => void;
+};
+
+export type CMS_USER_PROP = {
+  usuarioConnected: ICMS_USER;
+};
+
+export type SIDEBAR_MENU_PROP = {
+  menu: IMenuSidebar[];
+};
+
+export type SIDEBAR_ITEMS_PROP = {
+  items: IMenuSidebar;
 };

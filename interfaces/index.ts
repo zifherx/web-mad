@@ -266,3 +266,31 @@ export interface IWindowSize {
   innerHeight: number;
   innerWidth: number;
 }
+
+export interface ICMS_USER {
+  name: string;
+  email: string;
+  avatar: string;
+  isActive: boolean;
+  cerarSesion: () => Promise<void>;
+}
+
+export interface IMenuSidebar {
+  id: number;
+  slug: string;
+  label: string;
+  icon: IconProp;
+  badge?: number | null;
+  color: string;
+  hasSubmenu: boolean;
+  submenu: ISubmenu[];
+  isDropdown?: boolean;
+}
+
+export interface ISubmenu {
+  id: number;
+  slug: string;
+  label: string;
+  badge?: number;
+  icon?: IconProp;
+}

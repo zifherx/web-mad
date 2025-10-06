@@ -1,9 +1,13 @@
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
+import { StackProvider, StackTheme } from "@stackframe/stack";
+import { stackClientApp } from "../stack/client";
+
 import { geistMono, geistSans } from "@/fonts";
 import "./globals.css";
 import { METADATA } from "@/utils/GlobalFunctions";
+import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = METADATA;
 
@@ -17,19 +21,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextTopLoader
-          color="#000c25"
-          initialPosition={0.08}
-          crawlSpeed={200}
-          height={3}
-          crawl={true}
-          showSpinner={true}
-          easing="ease"
-          speed={200}
-          shadow="0 0 10px #000c25,0 0 5px #000c25"
-          showAtBottom={true}
-        />
-        {children}
+        <StackProvider app={stackClientApp} lang="es-419">
+          <StackTheme>
+            <NextTopLoader
+              color="#000c25"
+              initialPosition={0.08}
+              crawlSpeed={200}
+              height={3}
+              crawl={true}
+              showSpinner={true}
+              easing="ease"
+              speed={200}
+              shadow="0 0 10px #000c25,0 0 5px #000c25"
+              showAtBottom={true}
+            />
+            {children}
+            <Toaster />
+          </StackTheme>
+        </StackProvider>
       </body>
     </html>
   );

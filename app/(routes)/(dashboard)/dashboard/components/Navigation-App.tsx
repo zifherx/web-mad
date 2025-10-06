@@ -1,18 +1,20 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
   BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { usePathname } from "next/navigation";
 
 export function NavigationApp() {
   const pathname = usePathname();
-  const namePage = pathname.split("/");
+  const segments = pathname.split("/").filter((segment) => segment !== "");
 
   return (
     <header className="flex h-16 shrink-0 items-center gap-2 ease-linear group-has-data-[collapsible=icon]/sidebar-wrapper:h-12">
@@ -24,9 +26,19 @@ export function NavigationApp() {
         />
         <Breadcrumb>
           <BreadcrumbList>
-            <BreadcrumbItem className="hidden md:block">
-              <BreadcrumbPage className="capitalize">{namePage}</BreadcrumbPage>
-            </BreadcrumbItem>
+            {segments.map((segment, index) => {
+              const isLast = index === segment.length - 1;
+              return (
+                <div key={index} className="flex items-center gap-2">
+                  <BreadcrumbItem>
+                    <BreadcrumbPage className="capitalize font-medium text-lg">
+                      {segment}
+                    </BreadcrumbPage>
+                  </BreadcrumbItem>
+                  {!isLast && <BreadcrumbSeparator />}
+                </div>
+              );
+            })}
           </BreadcrumbList>
         </Breadcrumb>
       </div>

@@ -20,7 +20,9 @@ export default function LayoutDashboard({ children }: REACT_CHILDREN_TYPE) {
       <SidebarApp />
       <SidebarInset>
         <NavigationApp />
-        {children}
+        <div className="flex flex-col gap-4 p-4 pt-0 border-2 border-cyan-500">
+          {children}
+        </div>
       </SidebarInset>
     </SidebarProvider>
   );

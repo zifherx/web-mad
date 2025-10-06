@@ -119,3 +119,7 @@ export const getRandomServices = (servicios: IService[]): IService[] => {
 
   return randomServices;
 };
+
+export const generatePath = (indice: number, segmento: string[]) => {
+  return "/" + segmento.slice(0, indice + 1).join("/");
+};
