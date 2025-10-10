@@ -1,3 +1,9 @@
+import { DashboardView } from "./components/Dashboard-View";
+
 export default function DashboardPage() {
-  return <div className="border-2 border-red-500">DashboardPage</div>;
+  return (
+    <div>
+      <DashboardView />
+    </div>
+  );
 }

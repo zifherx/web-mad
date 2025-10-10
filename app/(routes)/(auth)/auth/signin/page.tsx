@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { AtSign, Eye, EyeOff, KeyRound, Loader2, Zap } from "lucide-react";
 import { useStackApp } from "@stackframe/stack";
+import { AtSign, Eye, EyeOff, KeyRound, Loader2, Zap } from "lucide-react";
 
 import {
   Card,
@@ -22,18 +22,16 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-
-import { loginFormSchema, LoginFormValues } from "@/forms";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+
+import { loginFormSchema, LoginFormValues } from "@/forms";
 
 export default function CustomSignInPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
   const [showPassword, setShowPassword] = useState(true);
   const appStack = useStackApp();
-  const router = useRouter();
 
   const formLogin = useForm<LoginFormValues>({
     resolver: zodResolver(loginFormSchema),
@@ -45,11 +43,11 @@ export default function CustomSignInPage() {
 
   const onSubmit = async (values: LoginFormValues) => {
     setIsSubmitting(true);
-    console.log(values);
     const result = await appStack.signInWithCredential({
       email: values.email,
       password: values.password,
     });
+    console.log("Result: ", result);
     if (result.status == "error") {
       toast("Error en el formulario");
     } else if (result.status == "ok") {

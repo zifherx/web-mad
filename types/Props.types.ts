@@ -10,6 +10,7 @@ import { IconType } from "react-icons";
 import {
   CarouselBannerItem,
   ICardCounter,
+  ICardStatIndicator,
   ICMS_USER,
   IEspecialidad,
   IEspecialista,
@@ -213,3 +214,23 @@ export type SIDEBAR_MENU_PROP = {
 export type SIDEBAR_ITEMS_PROP = {
   items: IMenuSidebar;
 };
+
+export type TYPE_VALUE_STAT = "NUMBER" | "CURRENCY" | "PERCENT";
+
+export type TYPE_TREND = "UP" | "DOWN" | "NEUTRAL";
+
+export type TYPE_VARIANT = "DEFAULT" | "GRADIENT" | "MINIMAL" | "VIBRANT";
+
+export type FILTER_DTO_TYPE = "createdAt" | "updatedAt" | "order" | "rating";
+
+export type CARD_INDICATOR_STAT_PROP = {
+  item: ICardStatIndicator;
+};
+
+export const TYPE_VALUE_STAT_MAPPER: Record<TYPE_VALUE_STAT, number> = {
+  NUMBER: 1,
+  CURRENCY: 2,
+  PERCENT: 3,
+};
+
+export type STATUS_TYPE_ENTRY_CMS = "published" | "archived" | "draft";

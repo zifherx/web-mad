@@ -1,4 +1,5 @@
 import { IService, NumerParseResult } from "@/interfaces";
+import { TYPE_VALUE_STAT, TYPE_VALUE_STAT_MAPPER } from "@/types";
 import { Metadata } from "next";
 
 export const parseCounterValue = (
@@ -122,4 +123,31 @@ export const getRandomServices = (servicios: IService[]): IService[] => {
 
 export const generatePath = (indice: number, segmento: string[]) => {
   return "/" + segmento.slice(0, indice + 1).join("/");
+};
+
+export const formatValueStat = (type: number, value: number): string => {
+  switch (type) {
+    case 1:
+      return new Intl.NumberFormat("es-PE", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      }).format(value);
+
+    case 2:
+      return new Intl.NumberFormat("es-PE", {
+        style: "currency",
+        currency: "PEN",
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }).format(value);
+
+    case 3:
+      return `${new Intl.NumberFormat("es-PE", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      }).format(value)}%`;
+
+    default:
+      return value.toString();
+  }
 };

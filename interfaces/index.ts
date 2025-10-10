@@ -1,4 +1,10 @@
-import { IconProp, ImagePositionProp } from "@/types";
+import {
+  IconProp,
+  ImagePositionProp,
+  TYPE_TREND,
+  TYPE_VALUE_STAT,
+  TYPE_VARIANT,
+} from "@/types";
 import {
   AnimationControls,
   TargetAndTransition,
@@ -293,4 +299,26 @@ export interface ISubmenu {
   label: string;
   badge?: number;
   icon?: IconProp;
+}
+
+export interface ICardStatIndicator {
+  id: number;
+  titleDescription: string;
+  titleValue: number;
+  typeValue: TYPE_VALUE_STAT;
+  badge: string;
+  iconBadge: IconProp;
+  footerTitle: string;
+  footerDescription: string;
+  trend?: TYPE_TREND;
+  trendPercentage?: number;
+  variant?: TYPE_VARIANT;
+  accentColor?: "red" | "orange" | "blue" | "purple" | "green";
+  animated?: boolean;
+}
+
+export interface RouteParams {
+  params: {
+    id: string;
+  };
 }
