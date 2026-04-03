@@ -13,3 +13,36 @@ export const WHATSAPP_MESSAGES = {
   SERVICIOS_CONTACTANOS: `🚨 Hola Marketing Al Día, estoy buscando soluciones para [problema o necesidad] y me interesa conocer más a fondo cómo sus servicios pueden ayudarme. ¿Me cuentan más?`,
   FOOTER_BOTON_WHATSAPP: `📲 ¡Hola! Estoy interesado en ser parte de Marketing Al Día, ya sea contratando sus servicios, escribiendo en su blog, siendo speaker o formando parte de la comunidad. ¿Cómo podemos empezar?`,
 };
+
+export const HTTP_RESPONSE = {
+  BAD_REQUEST: {
+    code: 400,
+    value: "BAD_REQUEST",
+    message: "Bad Request",
+  },
+  UNAUTHORIZED: {
+    code: 401,
+    value: "UNAUTHORIZED",
+    message: "Unauthorized",
+  },
+  FORBIDDEN: {
+    code: 403,
+    value: "FORBIDDEN",
+    message: "Forbidden",
+  },
+  NOT_FOUND: {
+    code: 404,
+    value: "NOT_FOUND",
+    message: "Resource not found",
+  },
+  CONFLICT: {
+    code: 409,
+    value: "CONFLICT",
+    message: "Conflict",
+  },
+  INTERNAL_ERROR: {
+    code: 500,
+    value: "INTERNAL_ERROR",
+    message: "Internal Server Error",
+  },
+};

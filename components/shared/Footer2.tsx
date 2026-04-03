@@ -1,16 +1,16 @@
 "use client";
 
-import { MenuFooterData, SocialButtonData } from "@/data";
-import { Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Mail, MapPin, Phone } from "lucide-react";
+
+import { LinkHref } from "./LinkHref";
 import { OptionFooter } from "./OptionFooter";
 import { SocialButton } from "./SocialButton";
-import { LinkHref } from "./LinkHref";
+
+import { MenuFooterData, SocialButtonData } from "@/data";
 
 export function Footer2() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-blueCustom text-white">
       <div className="max-w-7xl mx-auto px-4 pt-16 pb-4">
@@ -67,7 +67,7 @@ export function Footer2() {
                 childrens={childrens}
                 titleMenu={titleMenu}
               />
-            )
+            ),
           )}
         </div>
 
@@ -84,7 +84,7 @@ export function Footer2() {
                     srOnly={srOnly}
                     target={target}
                   />
-                )
+                ),
               )}
             </div>
 
@@ -102,13 +102,14 @@ export function Footer2() {
                       </Link>
                     ))}
                   </div>
-                )
+                ),
               )}
             </div>
           </div>
           <div className="flex flex-col md:flex-row text-center md:text-base gap-2 md:gap-0 justify-between mt-8 pt-8 border-t border-gray-900">
             <p className="text-gray-100 text-sm">
-              © {currentYear} Marketing Al Día. Todos los derechos reservados.
+              © {new Date().getFullYear()} Marketing Al Día. Todos los derechos
+              reservados.
             </p>
             <span className="text-sm hover:text-redCustom transition-colors">
               Diseñado por{" "}

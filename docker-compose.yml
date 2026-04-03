@@ -1,0 +1,56 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: mongdb-mad-local
+    restart: unless-stopped
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    networks:
+      - mongodb_network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  mongodb-setup:
+    image: mongo:7.0
+    container_name: mongodb-setup
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - mongodb_network
+    restart: "no"
+    entrypoint: >
+      mongosh --host mongodb:27017 --eval "
+      db = db.getSiblingDB('admin');
+      if(db.getUser('admin') == null){
+        db.createUser({
+          user: 'admin',
+          pwd: 'admin123',
+          roles: [
+            { role: 'root', db: 'admin'},
+            { role: 'readWriteAnyDatabase', db: 'admin'}
+          ]
+        });
+        print('Usuario admin creado exitosamente');
+      }else{
+        print('Usuario admin ya existe')
+      }
+      "
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local
+
+networks:
+  mongodb_network:
+    driver: bridge

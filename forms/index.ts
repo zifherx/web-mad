@@ -43,4 +43,10 @@ export const contactFormSchema = z.object({
   acepta_marketing: z.boolean().optional(),
 });
 
+export const loginFormSchema = z.object({
+  email: z.string().email(),
+  password: z.string().min(8),
+});
+
 export type ConctactFormValues = z.infer<typeof contactFormSchema>;
+export type LoginFormValues = z.infer<typeof loginFormSchema>;
