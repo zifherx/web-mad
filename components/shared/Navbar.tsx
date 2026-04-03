@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -8,7 +9,6 @@ import { Button } from "../ui/button";
 
 import { MenuDesktop } from "./MenuDesktop";
 import { MenuMobile } from "./MenuMobile";
-import { useState } from "react";
 
 export function Navbar() {
   const router = useRouter();
