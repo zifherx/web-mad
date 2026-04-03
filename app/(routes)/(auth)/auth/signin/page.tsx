@@ -43,17 +43,18 @@ export default function CustomSignInPage() {
 
   const onSubmit = async (values: LoginFormValues) => {
     setIsSubmitting(true);
+
     const result = await appStack.signInWithCredential({
       email: values.email,
       password: values.password,
     });
-    console.log("Result: ", result);
+
     if (result.status == "error") {
-      toast("Error en el formulario");
+      setIsSubmitting(false);
+      toast(result.error.message);
     } else if (result.status == "ok") {
       setIsSubmitting(false);
       toast("Bienvenido");
-      //   router.push("/dashboard");
     }
   };
 

@@ -1,14 +1,16 @@
 import { Check, Edit, Quote, Star } from "lucide-react";
 
+import { SkeletonStat } from "@/components/shared/Skeleton-Stat";
+
 import { TestimonialResponseDTO } from "@/types/models/testimonial.types";
 import { PaginatedResponse } from "@/types/api/response.types";
 
 interface StatsSectionProps {
   testimonios: PaginatedResponse<TestimonialResponseDTO>;
+  isLoading: boolean;
 }
 
-export function StatsSection({ testimonios }: StatsSectionProps) {
-  console.log("Testimonios: ", testimonios);
+export function StatsSection({ testimonios, isLoading }: StatsSectionProps) {
   const testimonials = testimonios.data || [];
 
   const publishedTestimonials = testimonials
@@ -54,6 +56,20 @@ export function StatsSection({ testimonios }: StatsSectionProps) {
       colorIcon: "text-gray-600",
     },
   ];
+
+  if (isLoading) {
+    return (
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <SkeletonStat />
+          <SkeletonStat />
+          <SkeletonStat />
+          <SkeletonStat />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
       {arrTestimonios.map(

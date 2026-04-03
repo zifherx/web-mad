@@ -28,6 +28,8 @@
     "@stackframe/stack": "^2.8.41",
     "@tanstack/react-query": "^5.90.2",
     "@tanstack/react-query-devtools": "^5.90.2",
+    "@tanstack/react-table": "^8.21.3",
+    "@uploadthing/react": "^7.3.3",
     "axios": "^1.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -47,6 +49,7 @@
     "react-type-animation": "^3.2.0",
     "sonner": "^2.0.3",
     "tailwind-merge": "^3.3.0",
+    "uploadthing": "^7.7.4",
     "zod": "^3.24.4"
   },
   "devDependencies": {
@@ -61,5 +64,10 @@
     "tailwindcss": "^4",
     "tw-animate-css": "^1.2.9",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "overrides": {
+      "lucide-react>react": "^19.0.0"
+    }
   }
 }

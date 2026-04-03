@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
   },
   distDir: "dist",
   assetPrefix: "",
+  devIndicators: {
+    position: "bottom-left",
+  },
 };
 
 export default nextConfig;

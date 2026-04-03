@@ -69,7 +69,7 @@ interface UpdateTestimonialVariables {
 }
 
 // UPDATE
-export function useUpdateTestiimonial(): UseMutationResult<
+export function useUpdateTestimonial(): UseMutationResult<
   TestimonialResponseDTO,
   Error,
   UpdateTestimonialVariables,

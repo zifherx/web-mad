@@ -1,6 +1,10 @@
-import { IService, NumerParseResult } from "@/interfaces";
-import { TYPE_VALUE_STAT, TYPE_VALUE_STAT_MAPPER } from "@/types";
 import { Metadata } from "next";
+import {
+  GroupedSession,
+  IService,
+  NumerParseResult,
+  SessionItem,
+} from "@/interfaces";
 
 export const parseCounterValue = (
   finalNumber: string | number
@@ -150,4 +154,46 @@ export const formatValueStat = (type: number, value: number): string => {
     default:
       return value.toString();
   }
+};
+
+export const getDayFromDate = (dateString: string): string => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("es-PE", { weekday: "long" });
+};
+
+export const formatTime = (timeString: string): string => {
+  const [hours, minutes] = timeString.split(":");
+  const hour = parseInt(hours);
+  const period = hour >= 12 ? "PM" : "AM";
+  const hour12 = hour === 0 ? 12 : hour > 12 ? hour - 12 : hour;
+
+  return `${hour12 < 10 ? "0" + hour12 : hour12}:${minutes} ${period}`;
+};
+
+export const groupSessionsByTime = (
+  sessions: SessionItem[]
+): GroupedSession[] => {
+  const grouped: Record<string, GroupedSession> = {};
+
+  sessions.map(({ session }) => {
+    const { _metadata, fecha_session, session_hora_fin, session_hora_inicio } =
+      session;
+    const timekey = `${session_hora_inicio}-${session_hora_fin}`;
+
+    if (!grouped[timekey]) {
+      grouped[timekey] = {
+        horaInicio: session_hora_inicio,
+        horaFin: session_hora_fin,
+        dias: [],
+      };
+    }
+
+    grouped[timekey].dias.push({
+      fecha: fecha_session,
+      dia: getDayFromDate(fecha_session),
+      uid: _metadata.uid,
+    });
+  });
+
+  return Object.values(grouped);
 };

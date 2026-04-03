@@ -322,3 +322,29 @@ export interface RouteParams {
     id: string;
   };
 }
+
+// Tipos TypeScript
+export interface SessionMetadata {
+  uid: string;
+}
+
+export interface Session {
+  fecha_session: string;
+  session_hora_inicio: string;
+  session_hora_fin: string;
+  _metadata: SessionMetadata;
+}
+
+export interface SessionItem {
+  session: Session;
+}
+
+export interface GroupedSession {
+  horaInicio: string;
+  horaFin: string;
+  dias: {
+    fecha: string;
+    dia: string;
+    uid: string;
+  }[];
+}

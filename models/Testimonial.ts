@@ -78,7 +78,7 @@ const testimonialSchema = new Schema<
 );
 
 testimonialSchema.methods.publish = async function () {
-  this.status = "publish";
+  this.status = "published";
   return await this.save();
 };
 
