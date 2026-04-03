@@ -33,7 +33,7 @@ export function TestimoniosView() {
       // status: "published",
       page: 1,
       limit: 10,
-    }
+    },
   );
 
   // Filtros locales
@@ -82,7 +82,7 @@ export function TestimoniosView() {
   // Submits
 
   const handleEditSubmit = async (
-    data: CreateTestimonialInput | UpdateTestimonialInput
+    data: CreateTestimonialInput | UpdateTestimonialInput,
   ) => {
     try {
       if (selectedTestimonial?.id) {
@@ -105,7 +105,7 @@ export function TestimoniosView() {
       toast.error(
         selectedTestimonial?.id
           ? "Error al actualizar el testimonio"
-          : "Error al crear el testimonio"
+          : "Error al crear el testimonio",
       );
     }
   };

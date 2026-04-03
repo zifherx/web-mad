@@ -20,11 +20,11 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="es-PE">
+    <html lang="es-PE" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <StackProvider app={stackClientApp} lang="es-419">
+        <StackProvider app={stackClientApp}>
           <QueryProvider>
             <StackTheme>
               <NextTopLoader

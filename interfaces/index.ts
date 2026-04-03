@@ -318,9 +318,7 @@ export interface ICardStatIndicator {
 }
 
 export interface RouteParams {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>;
 }
 
 // Tipos TypeScript
