@@ -12,9 +12,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: "export",
-  distDir: "dist",
   assetPrefix: "",
+  devIndicators: {
+    position: "bottom-left",
+  },
 };
 
 export default nextConfig;

@@ -1,4 +1,10 @@
-import { IconProp, ImagePositionProp } from "@/types";
+import {
+  IconProp,
+  ImagePositionProp,
+  TYPE_TREND,
+  TYPE_VALUE_STAT,
+  TYPE_VARIANT,
+} from "@/types";
 import {
   AnimationControls,
   TargetAndTransition,
@@ -265,4 +271,78 @@ export interface IOrbitalesElement {
 export interface IWindowSize {
   innerHeight: number;
   innerWidth: number;
+}
+
+export interface ICMS_USER {
+  name: string;
+  email: string;
+  avatar: string;
+  isActive: boolean;
+  cerarSesion: () => Promise<void>;
+}
+
+export interface IMenuSidebar {
+  id: number;
+  slug: string;
+  label: string;
+  icon: IconProp;
+  badge?: number | null;
+  color: string;
+  hasSubmenu: boolean;
+  submenu: ISubmenu[];
+  isDropdown?: boolean;
+}
+
+export interface ISubmenu {
+  id: number;
+  slug: string;
+  label: string;
+  badge?: number;
+  icon?: IconProp;
+}
+
+export interface ICardStatIndicator {
+  id: number;
+  titleDescription: string;
+  titleValue: number;
+  typeValue: TYPE_VALUE_STAT;
+  badge: string;
+  iconBadge: IconProp;
+  footerTitle: string;
+  footerDescription: string;
+  trend?: TYPE_TREND;
+  trendPercentage?: number;
+  variant?: TYPE_VARIANT;
+  accentColor?: "red" | "orange" | "blue" | "purple" | "green";
+  animated?: boolean;
+}
+
+export interface RouteParams {
+  params: Promise<{ id: string }>;
+}
+
+// Tipos TypeScript
+export interface SessionMetadata {
+  uid: string;
+}
+
+export interface Session {
+  fecha_session: string;
+  session_hora_inicio: string;
+  session_hora_fin: string;
+  _metadata: SessionMetadata;
+}
+
+export interface SessionItem {
+  session: Session;
+}
+
+export interface GroupedSession {
+  horaInicio: string;
+  horaFin: string;
+  dias: {
+    fecha: string;
+    dia: string;
+    uid: string;
+  }[];
 }
